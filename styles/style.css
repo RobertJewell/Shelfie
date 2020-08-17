@@ -614,9 +614,10 @@ a {
 
 .main__background {
   width: 100vw;
-  position: absolute;
+  position: relative;
   background-image: url(../images/mainBGHorizontal--top.svg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .pageTitle {
@@ -630,5 +631,20 @@ a {
   .pageTitle {
     font-size: 4rem;
   }
+}
+
+.pageTitle__subtitle {
+  color: #e47b90;
+  margin: 3rem auto 1rem 0;
+}
+
+@media (min-width: 1280px) {
+  .pageTitle__subtitle {
+    font-size: 4rem;
+  }
+}
+
+.section1__torty {
+  height: 600px;
 }
 /*# sourceMappingURL=style.css.map */

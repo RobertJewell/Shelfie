@@ -495,9 +495,10 @@ a {
 
 .main__background {
   width: 100vw;
-  position: absolute;
+  position: relative;
   background-image: url(../images/mainBGHorizontal--top.svg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .pageTitle {
@@ -508,4 +509,19 @@ a {
   @include for-desktop-up() {
     font-size: 4rem;
   }
+}
+
+.pageTitle__subtitle {
+  color: $highlight-color;
+  margin: 3rem auto 1rem 0;
+  @include for-desktop-up() {
+    font-size: 4rem;
+  }
+}
+
+
+//temp - for test section spacing before content
+
+.section1__torty {
+  height: 600px;
 }
