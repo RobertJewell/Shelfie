@@ -576,15 +576,32 @@ a {
 }
 
 
-// .options__list--popular {
-//   margin-top: 2rem;
-//   border: $highlight-color solid 3px;
-//   border-radius: 12px;
-//   padding: 25px;
-// }
+.options__list--popular {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: $highlight-color solid 4px;
+  border-radius: 16px;
+  padding: 25px;
+  h3 {
+    margin-top: 1rem;
+  }
+}
+
+
 
 //temp - for test section spacing before content
 
 .section1__torty {
   height: 600px;
+}
+
+
+//footer
+.footer {
+  height: 120px;
+  width: 100%;
+  .CTA {
+    display: block; 
+    margin: 2rem auto; 
+  }
 }

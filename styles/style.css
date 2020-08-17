@@ -717,7 +717,29 @@ a {
   padding: 0 20px;
 }
 
+.options__list--popular {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: #e47b90 solid 4px;
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.options__list--popular h3 {
+  margin-top: 1rem;
+}
+
 .section1__torty {
   height: 600px;
+}
+
+.footer {
+  height: 120px;
+  width: 100%;
+}
+
+.footer .CTA {
+  display: block;
+  margin: 2rem auto;
 }
 /*# sourceMappingURL=style.css.map */
