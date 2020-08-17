@@ -195,9 +195,7 @@ a {
       height: 70px;
       width: 120px;
       font-size: 16px;
-      
     }
-  
   }
 }
 
@@ -214,7 +212,7 @@ a {
   width: 100px;
   border-radius: 0 0 100px 100px;
   background-color: #f9d7de;
-  transition: border-radius ease-in-out 200ms;
+  // transition: border-radius ease-in-out 200ms;
   @include for-tablet-portrait-up() {
     display: block;
   }
@@ -223,10 +221,14 @@ a {
   }
 }
 
+.header__logo:hover {
+  // border-radius: 0 0 12px 12px;
+  cursor: pointer;
+}
+
 .mobile__logo--container {
   position: absolute;
   width: 100%;
-
 }
 
 .mobile__logo {
@@ -239,12 +241,6 @@ a {
   @include for-tablet-portrait-up() {
     display: none;
   }
-  
-}
-
-.header__logo:hover {
-  border-radius: 0 0 12px 12px;
-  cursor: pointer;
 }
 
 //header CTA
@@ -265,8 +261,6 @@ a {
     padding: 1rem 1.2rem;
     border-radius: 0 0 11px 11px;
   }
-
-
 }
 
 .header__CTA:hover {
@@ -298,7 +292,6 @@ a {
   background-color: $highlight-color;
   transition: opacity ease 200ms;
   transition: transform ease 200ms;
-
 }
 
 .header__cake--dot {
@@ -323,7 +316,6 @@ a {
 .toggle .header__cake--layer3 {
   transform: rotate(45deg) translate(-4px, -6px);
 }
-
 
 //landing page
 .landingPage__BG--container {
@@ -362,12 +354,10 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   bottom: 0;
-  @include for-tablet-portrait-up(){
+  @include for-tablet-portrait-up() {
     display: none;
   }
 }
-
-
 
 .landingPage__content {
   display: flex;
@@ -380,7 +370,6 @@ a {
     bottom: 20px;
     max-height: 700px;
     min-height: 500px;
-
   }
   @include for-desktop-up() {
     height: calc(100vh - 70px);
@@ -455,7 +444,6 @@ a {
   align-self: center;
   @include for-tablet-landscape-up() {
     padding: 1.5rem 2rem;
-
   }
 }
 
@@ -481,7 +469,7 @@ a {
   display: block;
   margin-bottom: 3rem;
   font-size: 1.2rem;
-  @include for-small-phone-only(){
+  @include for-small-phone-only() {
     margin-bottom: 2rem;
   }
   @include for-tablet-portrait-up() {
@@ -491,12 +479,10 @@ a {
 
 .landingPage__mobileLinks:first-of-type {
   margin-top: 6rem;
-  @include for-small-phone-only(){
+  @include for-small-phone-only() {
     margin-top: 2rem;
-
   }
 }
-
 
 //MAIN PAGES
 
