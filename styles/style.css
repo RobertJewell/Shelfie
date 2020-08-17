@@ -220,6 +220,27 @@ a {
   }
 }
 
+@media (min-width: 640px) {
+  .header__link--anchor {
+    height: 50px;
+    width: 75px;
+  }
+}
+
+@media (min-width: 900px) {
+  .header__link--anchor {
+    height: 50px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header__link--anchor {
+    height: 70px;
+    width: 120px;
+  }
+}
+
 .header__link--contact {
   display: block;
 }
