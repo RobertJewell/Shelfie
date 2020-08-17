@@ -295,6 +295,10 @@ a {
   }
 }
 
+.header__cake:hover {
+  cursor: pointer;
+}
+
 .header__cake--layer {
   width: 20px;
   height: 3px;
@@ -501,8 +505,8 @@ a {
   width: 100vw;
   position: relative;
   background-image: url(../images/mainBGHorizontal--top.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat-x;
 }
 
 .pageTitle {
@@ -516,14 +520,21 @@ a {
 }
 
 .options {
-  margin: 0 30px;
+  padding: 0 50px;
+  @include for-tablet-portrait-up() {
+    padding: 0 50px;
+    flex-wrap: wrap;
+  }
 }
+
 
 .options__header {
   font-family: "coiny", sans-serif;
   text-transform: uppercase;
   color: $highlight-color;
   margin: 3rem auto 1rem 0;
+  word-wrap: break-word;
+  width: 100%;
   @include for-desktop-up() {
     font-size: 4rem;
   }
@@ -536,9 +547,41 @@ a {
 .options__list {
   font-size: 1rem;
   list-style-position: inside;
-  line-height: 1.5rem;
-
+  line-height: 2;
 }
+
+.options__list > li {
+  margin-bottom: 0.5rem;
+}
+
+.options__list--sublist {
+  margin-left: 2rem;
+}
+
+//nonMobile left/right split
+.options__large {
+  display: flex;
+  flex-direction: column;
+  @include for-tablet-portrait-up() {
+    margin: 0 -20px;
+  }
+  @include for-tablet-landscape-up() {
+    flex-direction: row;
+  }
+}
+
+.options__large > div {
+  flex-basis: 100%;
+  padding: 0 20px;
+}
+
+
+// .options__list--popular {
+//   margin-top: 2rem;
+//   border: $highlight-color solid 3px;
+//   border-radius: 12px;
+//   padding: 25px;
+// }
 
 //temp - for test section spacing before content
 
