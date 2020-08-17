@@ -133,6 +133,10 @@ a {
 }
 
 //Header
+.header__container {
+  overflow: visible;
+}
+
 .navBar {
   font-family: "quicksand";
   width: 100%;
@@ -206,7 +210,7 @@ a {
 }
 
 
-.header__link--contact {
+.header__link--mobileOnly {
   display: block;
   @include for-tablet-portrait-up() {
     display: none;
@@ -511,7 +515,13 @@ a {
   }
 }
 
-.pageTitle__subtitle {
+.options {
+  margin: 0 30px;
+}
+
+.options__header {
+  font-family: "coiny", sans-serif;
+  text-transform: uppercase;
   color: $highlight-color;
   margin: 3rem auto 1rem 0;
   @include for-desktop-up() {
@@ -519,6 +529,16 @@ a {
   }
 }
 
+.options__header--subheader {
+  font-size: 2rem;
+}
+
+.options__list {
+  font-size: 1rem;
+  list-style-position: inside;
+  line-height: 1.5rem;
+
+}
 
 //temp - for test section spacing before content
 

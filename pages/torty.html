@@ -12,7 +12,7 @@
 
 <body>
     <div class="main__background">
-        <div class="container">
+        <div class="container header__container">
             <div class="header__cake">
                 <div class="header__cake--dot"></div>
                 <div class="header__cake--layer header__cake--layer1"></div>
@@ -24,22 +24,32 @@
                     <img class="header__logo" src="../images/SweetLogo.png" alt="logo" />
                 </a>
                 <div class="header__links">
+                    <a class="header__link--anchor header__link--mobileOnly" href="../index.html">Home</a>
                     <a class="header__link--anchor" href="torty.html">Torty</a>
                     <a class="header__link--anchor" href="babeczki.html">Babeczki</a>
                     <a class="header__link--anchor" href="desery.html">Desery</a>
                     <a class="header__link--anchor" href="galeria.html">Galeria</a>
                     <a class="header__link--anchor" href="FAQ.html">FAQ</a>
-                    <button class="header__link--contact"><a href="pages/torty.html">Kontakt</a></button>
+                    <a class="header__link--anchor header__link--mobileOnly" href="kontakt.html">Kontakt</a>
                 </div>
                 <button class="header__CTA">Kontakt</button>
             </header>
+        </div>
+        <div class="container section1__torty">
             <h1 class="pageTitle">TORTY</h1>
         </div>
-        <div class="section1__torty"></div>
     </div>
-    <div class="container">
-        <h2 class="pageTitle pageTitle__subtitle">Options</h2>
+    <div class="container options">
+        <h2 class="pageTitle options__header">Options</h2>
+        <h3 class="options__header options__header--subheader">Biszkopt</h3>
+        <ul class="options__list">
+            <li>jasny</li>
+            <li>kakaowy (z dodatkiem ciemnego kakao)</li>
+            <li>cynamonowy</li>
+        </ul>
     </div>
+
+    <script src="../js/navCake.js"></script>
 </body>
 
 </html>
