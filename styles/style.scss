@@ -145,6 +145,7 @@ a {
   overflow-y: hidden;
   z-index: 2;
   @include for-tablet-portrait-up() {
+    overflow: visible;
     transform: translateY(0%);
     position: relative;
     height: 50px;
@@ -168,53 +169,41 @@ a {
   justify-content: space-evenly;
   padding: 2rem 0;
   @include for-tablet-portrait-up() {
+    overflow: visible;
     padding-top: 0;
     height: auto;
     background: none;
     flex-direction: row;
     width: auto;
   }
-  button {
-    height: 50px;
-    color: $highlight-color;
-    font-family: "quicksand";
-    font-size: 14px;
-    margin: 0.8rem auto;
-    
-    @include for-tablet-portrait-up() {
-      margin: 0 auto;
-      position: relative;
-      height: 50px;
-      width: 75px;
-    }
-    @include for-tablet-landscape-up() {
-      position: relative;
-      height: 50px;
-      width: 100px;
-    }
-    @include for-desktop-up() {
-      height: 70px;
-      width: 120px;
-      font-size: 16px;
-    }
-  }
 }
 
 .header__link--anchor {
+  height: 50px;
+  text-align: center;
+  justify-self: center;
+  color: $highlight-color;
+  font-family: "quicksand";
+  font-size: 14px;
+  margin: 0.8rem auto;
   @include for-tablet-portrait-up() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     height: 50px;
     width: 75px;
   }
   @include for-tablet-landscape-up() {
-    height: 50px;
-    width: 100px;
+      height: 50px;
+      width: 100px;
   }
   @include for-desktop-up() {
-    height: 70px;
-    width: 120px;
+      height: 70px;
+      width: 120px;
+      font-size: 16px;
   }
 }
-
 
 
 .header__link--contact {

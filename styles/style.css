@@ -135,6 +135,7 @@ a {
 
 @media (min-width: 640px) {
   .navBar {
+    overflow: visible;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     position: relative;
@@ -176,6 +177,7 @@ a {
 
 @media (min-width: 640px) {
   .header__links {
+    overflow: visible;
     padding-top: 0;
     height: auto;
     background: none;
@@ -187,8 +189,11 @@ a {
   }
 }
 
-.header__links button {
+.header__link--anchor {
   height: 50px;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: #e47b90;
   font-family: "quicksand";
   font-size: 14px;
@@ -196,48 +201,34 @@ a {
 }
 
 @media (min-width: 640px) {
-  .header__links button {
-    margin: 0 auto;
-    position: relative;
+  .header__link--anchor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
     height: 50px;
     width: 75px;
   }
 }
 
 @media (min-width: 900px) {
-  .header__links button {
-    position: relative;
+  .header__link--anchor {
     height: 50px;
     width: 100px;
   }
 }
 
 @media (min-width: 1280px) {
-  .header__links button {
+  .header__link--anchor {
     height: 70px;
     width: 120px;
     font-size: 16px;
-  }
-}
-
-@media (min-width: 640px) {
-  .header__link--anchor {
-    height: 50px;
-    width: 75px;
-  }
-}
-
-@media (min-width: 900px) {
-  .header__link--anchor {
-    height: 50px;
-    width: 100px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .header__link--anchor {
-    height: 70px;
-    width: 120px;
   }
 }
 
