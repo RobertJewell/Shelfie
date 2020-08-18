@@ -5,6 +5,8 @@ $text-color-main: #494949;
 $highlight-color: #e47b90;
 $highlight-shadow: (0px 3px 3px rgba(206, 105, 126, 0.2)),
   (0px 5px 15px rgba(184, 44, 73, 0.2));
+$main-shadow: (0px 3px 3px rgba(0, 15, 58, 0.1)),
+  (0px 5px 15px rgba(0, 15, 58, 0.1));
 
 // Mixins - Media queries
 @mixin for-small-phone-only {
@@ -110,6 +112,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 .CTA {
   background: #df7f93;
   color: white;
@@ -127,6 +133,11 @@ a {
   bottom: 1px;
   box-shadow: (0px 3px 3px rgba(206, 105, 126, 0.4)),
     (0px 5px 15px rgba(184, 44, 73, 0.3));
+}
+
+.heading {
+  font-family: "coiny", sans-serif;
+  color: $highlight-color;
 }
 
 //Header
@@ -510,6 +521,7 @@ a {
   background-image: url(../images/mainBGHorizontal--top.svg);
   background-size: contain;
   background-repeat: repeat-x;
+  margin-bottom: 2rem;
 }
 
 .pageTitle {
@@ -532,9 +544,9 @@ a {
 
 .options__header {
   font-family: "coiny", sans-serif;
+  color: $highlight-color;
   font-size: 2rem;
   text-transform: uppercase;
-  color: $highlight-color;
   margin: 3rem 0 1rem 0;
   word-wrap: break-word;
   width: 100%;
@@ -595,8 +607,72 @@ a {
 
 //temp - for test section spacing before content
 
-.section1__torty {
-  height: 600px;
+//info cards
+
+//temp
+.container__cards {
+  @include for-desktop-up() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  @include for-tablet-portrait-up() {
+    flex-direction: row;
+    margin: 0 auto 1rem auto;
+    max-width: 600px;
+    padding: 0;
+  }
+  @include for-desktop-up() {
+    max-width: 500px;
+  }
+}
+
+.card:last-of-type {
+  margin-bottom: 3rem;
+}
+
+.card__section {
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.card__image {
+  border-radius: 12px;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: $main-shadow;
+  @include for-tablet-portrait-up() {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  @include for-desktop-up() {
+    max-width: 200px;
+  }
+}
+
+.card__info {
+  @include for-desktop-up() {
+    padding: none;
+    margin: auto 0;
+  }
+}
+
+.card__info--header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.card__info--subheader {
+  font-size: 0.8rem;
+  margin: 10px 0;
 }
 
 //footer
