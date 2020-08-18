@@ -119,11 +119,8 @@ a {
   position: relative;
   transition: bottom ease-out 200ms;
   transition: box-shadow ease-out 200ms;
+  //This is a bad idea, fix this using multiple classes
   bottom: 0px;
-  font-size: 1rem;
-  @include for-tablet-portrait-up() {
-    font-size: 0.8rem;
-  }
 }
 
 .CTA:hover {
@@ -199,16 +196,15 @@ a {
     width: 75px;
   }
   @include for-tablet-landscape-up() {
-      height: 50px;
-      width: 100px;
+    height: 50px;
+    width: 100px;
   }
   @include for-desktop-up() {
-      height: 70px;
-      width: 120px;
-      font-size: 16px;
+    height: 70px;
+    width: 120px;
+    font-size: 16px;
   }
 }
-
 
 .header__link--mobileOnly {
   display: block;
@@ -483,7 +479,7 @@ a {
 .landingPage__mobileLinks {
   display: block;
   margin-bottom: 3rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   @include for-small-phone-only() {
     margin-bottom: 2rem;
   }
@@ -527,25 +523,25 @@ a {
   }
 }
 
-
 .options__header {
   font-family: "coiny", sans-serif;
+  font-size: 2rem;
   text-transform: uppercase;
   color: $highlight-color;
-  margin: 3rem auto 1rem 0;
+  margin: 3rem 0 1rem 0;
   word-wrap: break-word;
   width: 100%;
   @include for-desktop-up() {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 .options__header--subheader {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .options__list {
-  font-size: 1rem;
+  // font-size: 1rem;
   list-style-position: inside;
   line-height: 2;
 }
@@ -575,21 +571,20 @@ a {
   padding: 0 20px;
 }
 
-
 .options__list--popular {
   margin: 2rem 0;
-  border: $highlight-color solid 4px;
-  border-radius: 16px;
   padding: 25px;
+  border: none;
   h3 {
     margin-top: 1rem;
   }
   @include for-tablet-portrait-up() {
+    border-radius: 16px;
+    border: $highlight-color solid 4px;
     margin: 2rem -25px;
+    box-shadow: $highlight-shadow;
   }
 }
-
-
 
 //temp - for test section spacing before content
 
@@ -597,13 +592,12 @@ a {
   height: 600px;
 }
 
-
 //footer
 .footer {
   height: 120px;
   width: 100%;
   .CTA {
-    display: block; 
-    margin: 2rem auto; 
+    display: block;
+    margin: 2rem auto;
   }
 }

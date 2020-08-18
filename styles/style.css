@@ -94,13 +94,6 @@ a {
   transition: box-shadow ease-out 200ms;
   transition: box-shadow ease-out 200ms, -webkit-box-shadow ease-out 200ms;
   bottom: 0px;
-  font-size: 1rem;
-}
-
-@media (min-width: 640px) {
-  .CTA {
-    font-size: 0.8rem;
-  }
 }
 
 .CTA:hover {
@@ -595,7 +588,7 @@ a {
 .landingPage__mobileLinks {
   display: block;
   margin-bottom: 3rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @media (max-height: 640px) {
@@ -655,25 +648,25 @@ a {
 
 .options__header {
   font-family: "coiny", sans-serif;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #e47b90;
-  margin: 3rem auto 1rem 0;
+  margin: 3rem 0 1rem 0;
   word-wrap: break-word;
   width: 100%;
 }
 
 @media (min-width: 1280px) {
   .options__header {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 .options__header--subheader {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .options__list {
-  font-size: 1rem;
   list-style-position: inside;
   line-height: 2;
 }
@@ -719,9 +712,8 @@ a {
 
 .options__list--popular {
   margin: 2rem 0;
-  border: #e47b90 solid 4px;
-  border-radius: 16px;
   padding: 25px;
+  border: none;
 }
 
 .options__list--popular h3 {
@@ -730,7 +722,11 @@ a {
 
 @media (min-width: 640px) {
   .options__list--popular {
+    border-radius: 16px;
+    border: #e47b90 solid 4px;
     margin: 2rem -25px;
+    -webkit-box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
+            box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
   }
 }
 
