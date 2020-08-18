@@ -773,6 +773,8 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 50px;
+  margin-bottom: 1rem;
+  overflow: visible;
 }
 
 @media (min-width: 640px) {
@@ -787,12 +789,6 @@ p {
   }
 }
 
-@media (min-width: 1280px) {
-  .card {
-    max-width: 500px;
-  }
-}
-
 .card:last-of-type {
   margin-bottom: 3rem;
 }
@@ -800,32 +796,43 @@ p {
 .card__section {
   margin: auto;
   padding: 1.5rem;
+  overflow: visible;
+}
+
+.card__section--image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .card__image {
   border-radius: 12px;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 70%;
+  margin: auto;
   -webkit-box-shadow: 0px 3px 3px rgba(0, 15, 58, 0.1), 0px 5px 15px rgba(0, 15, 58, 0.1);
           box-shadow: 0px 3px 3px rgba(0, 15, 58, 0.1), 0px 5px 15px rgba(0, 15, 58, 0.1);
 }
 
 @media (min-width: 640px) {
   .card__image {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
   }
 }
 
-@media (min-width: 1280px) {
-  .card__image {
-    max-width: 200px;
-  }
+.card__info {
+  margin-top: -1.5rem;
+  text-align: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 640px) {
   .card__info {
-    padding: none;
+    text-align: start;
+    padding: 1.5rem;
     margin: auto 0;
   }
 }
@@ -842,12 +849,12 @@ p {
 }
 
 .footer {
-  height: 120px;
   width: 100%;
+  padding-bottom: 2rem;
 }
 
-.footer .CTA {
+.CTA__footer {
   display: block;
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 /*# sourceMappingURL=style.css.map */
