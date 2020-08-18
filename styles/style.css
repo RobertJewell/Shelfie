@@ -718,8 +718,7 @@ a {
 }
 
 .options__list--popular {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   border: #e47b90 solid 4px;
   border-radius: 16px;
   padding: 25px;
@@ -727,6 +726,12 @@ a {
 
 .options__list--popular h3 {
   margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .options__list--popular {
+    margin: 2rem -25px;
+  }
 }
 
 .section1__torty {
