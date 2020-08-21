@@ -679,6 +679,16 @@ p {
   }
 }
 
+.options__header--main {
+  margin-left: 1rem;
+}
+
+@media (min-width: 640px) {
+  .options__header--main {
+    margin-left: 0;
+  }
+}
+
 .options__header--subheader {
   font-size: 1.5rem;
 }
@@ -856,5 +866,53 @@ p {
 .CTA__footer {
   display: block;
   margin: 4rem auto;
+}
+
+.card__cupcake {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__section--cupcakeTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .card__section--cupcakeTop {
+    text-align: start;
+    padding-bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.card__image--cupcake {
+  max-width: 250px;
+  margin-left: auto;
+  margin-bottom: 3rem;
+  border: solid #fdfbf7;
+}
+
+@media (min-width: 640px) {
+  .card__image--cupcake {
+    margin-left: 2rem;
+    max-width: 200px;
+    margin-bottom: 0rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
