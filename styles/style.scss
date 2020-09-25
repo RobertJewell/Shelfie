@@ -14,6 +14,11 @@ $main-shadow: (0px 3px 3px rgba(0, 15, 58, 0.1)),
     @content;
   }
 }
+@mixin for-narrow-phone-only {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
 @mixin for-tablet-portrait-up {
   @media (min-width: 640px) {
     @content;
@@ -80,6 +85,13 @@ $main-shadow: (0px 3px 3px rgba(0, 15, 58, 0.1)),
 
 .container--fullpage {
   height: 100vh;
+}
+
+.container__small {
+  max-width: 720px;
+  margin: auto;
+  padding: 0 4rem;
+  margin-bottom: 2rem;
 }
 
 html {
@@ -167,9 +179,6 @@ p {
     height: 50px;
     flex-direction: row;
   }
-  @include for-desktop-up() {
-    height: 70px;
-  }
 }
 
 .nav-active {
@@ -216,7 +225,6 @@ p {
     width: 100px;
   }
   @include for-desktop-up() {
-    height: 70px;
     width: 120px;
     font-size: 16px;
   }
@@ -239,9 +247,9 @@ p {
   @include for-tablet-portrait-up() {
     display: block;
   }
-  @include for-desktop-up() {
-    width: 140px;
-  }
+  // @include for-desktop-up() {
+  //   width: 140px;
+  // }
 }
 
 .header__logo:hover {
@@ -273,7 +281,7 @@ p {
   background-color: $highlight-color;
   color: white;
   box-shadow: $highlight-shadow;
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1rem;
   transition: padding ease-out 200ms;
   align-self: start;
   display: none;
@@ -282,7 +290,7 @@ p {
   }
   @include for-desktop-up() {
     font-size: 16px;
-    padding: 1rem 1.2rem;
+    // padding: 1rem 1.2rem;
     border-radius: 0 0 11px 11px;
   }
 }
@@ -291,7 +299,6 @@ p {
   padding: 1rem 1rem;
   @include for-desktop-up() {
     font-size: 16px;
-    padding: 1.4rem 1.2rem;
   }
 }
 
@@ -518,6 +525,7 @@ p {
   width: 100vw;
   position: relative;
   background-color: $bg-color-blue;
+  padding-bottom: 2rem;
 }
 
 .BG__wave {
@@ -553,7 +561,7 @@ p {
   color: $highlight-color;
   font-size: 2rem;
   text-transform: uppercase;
-  margin: 3rem 0 1rem 0;
+  margin: 1rem 0;
   word-wrap: break-word;
   width: 100%;
   @include for-desktop-up() {
@@ -650,13 +658,17 @@ p {
   // }
 }
 
-.card:last-of-type {
-  margin-bottom: 3rem;
+// .card:last-of-type {
+//   margin-bottom: 3rem;
+// }
+
+.card__container {
+  flex-direction: column;
 }
 
 .card__section {
   margin: auto;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   overflow: visible;
   // @include for-desktop-up() {
   //   padding: 0;
@@ -674,9 +686,13 @@ p {
   max-width: 70%;
   margin: auto;
   box-shadow: $main-shadow;
+  border: 5px solid white;
   @include for-tablet-portrait-up() {
     max-width: 250px;
     max-height: 250px;
+  }
+  @include for-narrow-phone-only() {
+    max-width: 90%;
   }
   // @include for-desktop-up() {
   //   max-width: 200px;
@@ -689,8 +705,9 @@ p {
   text-align: center;
   @include for-tablet-portrait-up() {
     text-align: start;
-    padding: 1.5rem;
-    margin: auto 0;
+    padding: 2rem;
+    margin: auto;
+    width: 350px;
   }
 }
 
