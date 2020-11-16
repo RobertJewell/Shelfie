@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Quicksand:wght@400;700&display=swap"
-        rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
-    <title>Torty</title>
-</head>
+    <title>FAQ</title>
+  </head>
 
-<body>
+  <body>
     <div class="main__background">
-        <div class="container">
-            <div class="header__cake">
-                <div class="header__cake--dot"></div>
-                <div class="header__cake--layer header__cake--layer1"></div>
-                <div class="header__cake--layer header__cake--layer2"></div>
-                <div class="header__cake--layer header__cake--layer3"></div>
-            </div>
-            <header class="navBar">
-                <a href="../index.html">
-                    <img class="header__logo" src="../images/SweetLogo.png" alt="logo" />
-                </a>
-                <div class="header__links">
-                    <a class="header__link--anchor" href="torty.html">Torty</a>
-                    <a class="header__link--anchor" href="babeczki.html">Babeczki</a>
-                    <a class="header__link--anchor" href="desery.html">Desery</a>
-                    <a class="header__link--anchor" href="galeria.html">Galeria</a>
-                    <a class="header__link--anchor" href="FAQ.html">FAQ</a>
-                    <button class="header__link--contact"><a href="pages/torty.html">Kontakt</a></button>
-                </div>
-                <button class="header__CTA">Kontakt</button>
-            </header>
-            <h1 class="pageTitle">FAQ</h1>
+      <div class="container header__container">
+        <div class="header__cake">
+          <div class="header__cake--dot"></div>
+          <div class="header__cake--layer header__cake--layer1"></div>
+          <div class="header__cake--layer header__cake--layer2"></div>
+          <div class="header__cake--layer header__cake--layer3"></div>
         </div>
+        <header class="navBar">
+          <a href="../index.html">
+            <img
+              class="header__logo"
+              src="../images/SweetLogo.png"
+              alt="logo"
+            />
+          </a>
+          <div class="header__links">
+            <a
+              class="header__link--anchor header__link--mobileOnly"
+              href="../index.html"
+              >Home</a
+            >
+            <a class="header__link--anchor" href="torty.html">Torty</a>
+            <a class="header__link--anchor" href="babeczki.html">Babeczki</a>
+            <a class="header__link--anchor" href="desery.html">Desery</a>
+            <a class="header__link--anchor" href="galeria.html">Galeria</a>
+            <a class="header__link--anchor" href="FAQ.html">FAQ</a>
+            <a
+              class="header__link--anchor header__link--mobileOnly"
+              href="kontakt.html"
+              >Kontakt</a
+            >
+          </div>
+          <a class="header__CTA" href="kontakt.html">Kontakt</a>
+        </header>
+      </div>
+      <div class="container">
+        <h1 class="pageTitle">FAQ</h1>
+        <div class="container__small"></div>
+      </div>
     </div>
 
     <script src="../js/navCake.js"></script>
-</body>
-
+  </body>
 </html>
