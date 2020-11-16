@@ -652,6 +652,7 @@ p {
 
 .options {
   padding: 0 50px;
+  max-width: 700px;
 }
 
 @media (min-width: 640px) {
@@ -738,19 +739,20 @@ p {
 
 .options__list--popular {
   margin: 2rem 0;
-  padding: 25px;
+  padding: 1.5rem;
   border: none;
 }
 
 .options__list--popular h3 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 @media (min-width: 640px) {
   .options__list--popular {
+    padding: 1rem 50px;
     border-radius: 16px;
     border: #e47b90 solid 4px;
-    margin: 2rem -25px;
+    margin: 2.5rem -50px;
     -webkit-box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
             box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
   }

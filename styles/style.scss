@@ -550,6 +550,7 @@ p {
 
 .options {
   padding: 0 50px;
+  max-width: 700px;
   @include for-tablet-portrait-up() {
     padding: 0 50px;
     flex-wrap: wrap;
@@ -613,15 +614,16 @@ p {
 
 .options__list--popular {
   margin: 2rem 0;
-  padding: 25px;
+  padding: 1.5rem;
   border: none;
   h3 {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
   @include for-tablet-portrait-up() {
+    padding: 1rem 50px;
     border-radius: 16px;
     border: $highlight-color solid 4px;
-    margin: 2rem -25px;
+    margin: 2.5rem -50px;
     box-shadow: $highlight-shadow;
   }
 }
