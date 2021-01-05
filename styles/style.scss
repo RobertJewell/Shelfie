@@ -194,6 +194,9 @@ p {
   z-index: 1;
   justify-content: space-evenly;
   padding: 2rem 0;
+  :last-of-type {
+    padding-bottom: 8rem;
+  }
   @include for-tablet-portrait-up() {
     overflow: visible;
     padding-top: 0;

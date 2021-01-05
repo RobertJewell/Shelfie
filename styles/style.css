@@ -187,6 +187,10 @@ p {
   padding: 2rem 0;
 }
 
+.header__links :last-of-type {
+  padding-bottom: 8rem;
+}
+
 @media (min-width: 640px) {
   .header__links {
     overflow: visible;
