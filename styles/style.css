@@ -984,4 +984,8 @@ textarea {
   font-weight: bold;
   color: #e47b90;
 }
+
+.description--intro {
+  text-align: justify;
+}
 /*# sourceMappingURL=style.css.map */
