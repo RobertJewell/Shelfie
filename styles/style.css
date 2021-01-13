@@ -913,7 +913,7 @@ p {
 .card--bordered {
   padding: 1rem;
   overflow: none;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 
 .card__container {
