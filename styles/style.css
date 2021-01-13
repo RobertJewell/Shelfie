@@ -45,6 +45,22 @@
   }
 }
 
+.container--wide {
+  max-width: none;
+  background-color: #fdfbf7;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 15, 58, 0.1), 0px 5px 15px rgba(0, 15, 58, 0.1);
+          box-shadow: 0px 3px 3px rgba(0, 15, 58, 0.1), 0px 5px 15px rgba(0, 15, 58, 0.1);
+  padding-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .container--wide {
+    margin: 2rem;
+    margin-top: 0;
+  }
+}
+
 .container--fullpage {
   height: 100vh;
 }
@@ -57,7 +73,7 @@
 }
 
 html {
-  background-color: #fdfbf7;
+  background-color: #e2f5ff;
 }
 
 body {
@@ -101,14 +117,18 @@ p {
   padding: 0.6rem 2.5rem;
   -webkit-box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
           box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
-  position: relative;
   -webkit-transition: bottom ease-out 200ms;
   transition: bottom ease-out 200ms;
   -webkit-transition: -webkit-box-shadow ease-out 200ms;
   transition: -webkit-box-shadow ease-out 200ms;
   transition: box-shadow ease-out 200ms;
   transition: box-shadow ease-out 200ms, -webkit-box-shadow ease-out 200ms;
-  bottom: 0px;
+}
+
+@media (min-width: 640px) {
+  .CTA {
+    display: none;
+  }
 }
 
 .CTA:hover {
@@ -406,7 +426,7 @@ p {
 .landingPage__BG {
   position: relative;
   overflow: none;
-  background-color: #e2f5ff;
+  background-color: #fdfbf7;
   border-radius: 50%;
   width: 2000px;
   height: 2000px;
@@ -445,27 +465,99 @@ p {
   }
 }
 
+.landing__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.no-webpalpha .landing__background--classic {
+  background-image: url(../images/Cakes/large/png/cake-classic-01--large.png);
+}
+
+.webpalpha .landing__background--classic {
+  background-image: url(../images/Cakes/large/webp/cake-classic-01--large.webp);
+}
+
+.landing__background--classic {
+  background-position: left -100px top 450px;
+  background-size: 200px;
+}
+
+@media (min-width: 640px) {
+  .landing__background--classic {
+    background-size: 400px;
+    background-position: -200px 300px;
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .landing__background--classic {
+    background-size: 500px;
+    background-position: -200px 300px;
+  }
+}
+
+.no-webpalpha .landing__background--naked {
+  background-image: url(../images/Cakes/large/png/cake-naked-01--large.png);
+}
+
+.webpalpha .landing__background--naked {
+  background-image: url(../images/Cakes/large/webp/cake-naked-01--large.webp);
+}
+
+.landing__background--naked {
+  background-position: right -120px top 150px;
+  background-size: 200px;
+}
+
+@media (min-width: 640px) {
+  .landing__background--naked {
+    background-position: right -200px top 50px;
+    background-size: 400px;
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .landing__background--naked {
+    background-size: 500px;
+    background-position: right -300px top 60px;
+  }
+}
+
+#largeClassicCake {
+  position: absolute;
+  left: -750px;
+  top: 200px;
+}
+
+#largeNakedCake {
+  position: absolute;
+  right: -750px;
+}
+
 .landingPage__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 @media (min-width: 640px) {
   .landingPage__content {
-    height: calc(100vh - 50px);
-    bottom: 20px;
     max-height: 700px;
     min-height: 500px;
   }
@@ -473,7 +565,6 @@ p {
 
 @media (min-width: 1280px) {
   .landingPage__content {
-    height: calc(100vh - 70px);
     max-height: 900px;
     min-height: 750px;
   }
@@ -481,35 +572,25 @@ p {
 
 .landingPage__main {
   padding: 1rem;
-}
-
-@media (min-width: 640px) {
-  .landingPage__main {
-    padding: 2rem;
-    width: 100%;
-  }
-}
-
-.landingPage__main {
   text-align: center;
   position: relative;
 }
 
 @media (min-width: 640px) {
   .landingPage__main {
-    text-align: left;
-    bottom: 40px;
+    padding: 0rem;
+    width: 100%;
+    margin-top: 50px;
   }
 }
 
 .title {
   font-family: "coiny", sans-serif;
-  margin-bottom: 1rem;
   font-size: 3rem;
   line-height: 3rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 640px) {
   .title {
     font-size: 4rem;
     line-height: 4rem;
@@ -524,14 +605,22 @@ p {
 }
 
 .subtitle {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: #e47b90;
+  margin-top: 80px;
 }
 
 @media (min-width: 640px) {
   .subtitle {
+    margin-top: 0;
     font-weight: 300;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .subtitle {
+    font-size: 1rem;
   }
 }
 
@@ -543,12 +632,6 @@ p {
 @media (min-width: 640px) {
   .landingPage__feature {
     display: block;
-  }
-}
-
-@media (min-width: 900px) {
-  .landingPage__feature {
-    padding: 3rem;
   }
 }
 
@@ -596,6 +679,20 @@ p {
   }
 }
 
+.landingPage__mobileLinksWrapper {
+  border-radius: 2rem;
+  background-color: #fdfbf7;
+  margin: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .landingPage__mobileLinksWrapper {
+    display: none;
+  }
+}
+
 .landingPage__mobileLinks {
   display: block;
   margin-bottom: 3rem;
@@ -611,16 +708,6 @@ p {
 @media (min-width: 640px) {
   .landingPage__mobileLinks {
     display: none;
-  }
-}
-
-.landingPage__mobileLinks:first-of-type {
-  margin-top: 6rem;
-}
-
-@media (max-height: 640px) {
-  .landingPage__mobileLinks:first-of-type {
-    margin-top: 2rem;
   }
 }
 
@@ -652,6 +739,10 @@ p {
   .pageTitle {
     font-size: 4rem;
   }
+}
+
+.FAQtitle {
+  margin-bottom: 4rem;
 }
 
 .options {
@@ -860,6 +951,7 @@ p {
     margin: 0;
     width: 60%;
     min-height: 300px;
+    min-width: 300px;
   }
 }
 
