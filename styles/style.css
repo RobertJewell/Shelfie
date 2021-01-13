@@ -904,12 +904,6 @@ p {
   }
 }
 
-@media (max-height: 640px) {
-  .card {
-    margin: 4rem 2rem;
-  }
-}
-
 .card--bordered {
   padding: 1rem;
   overflow: none;

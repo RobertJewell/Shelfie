@@ -751,9 +751,6 @@ p {
   //   max-width: 500px;
   //   margin-bottom: 2rem;
   // }
-  @include for-small-phone-only() {
-    margin: 4rem 2rem;
-  }
 }
 
 .card--bordered {
