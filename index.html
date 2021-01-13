@@ -12,10 +12,8 @@
   </head>
 
   <body>
-    <div class="landingPage__BG--container">
-      <div class="landingPage__BG"></div>
-      <div class="landingPage__BG--mobile"></div>
-    </div>
+    <div class="landing__background landing__background--classic"></div>
+    <div class="landing__background landing__background--naked"></div>
     <div class="container">
       <div class="header__cake">
         <div class="header__cake--dot"></div>
@@ -51,33 +49,46 @@
       </header>
       <div class="landingPage__content">
         <div class="landingPage__main">
-          <h1 class="title">Zjedzmy<br />trochę<br />słodkości</h1>
           <p class="subtitle">Pracownia cukiernicza</p>
-          <a class="landingPage__mobileLinks" href="pages/torty.html">Torty</a>
-          <a class="landingPage__mobileLinks" href="pages/babeczki.html"
-            >Babeczki</a
-          >
-          <a class="landingPage__mobileLinks" href="pages/desery.html"
-            >Desery</a
-          >
-          <a class="CTA" href="pages/kontakt.html">Kontakt</a>
+          <h1 class="title">Zjedzmy trochę<br />słodkości</h1>
+          <div class="landingPage__mobileLinksWrapper">
+            <a class="landingPage__mobileLinks" href="pages/torty.html"
+              >Torty</a
+            >
+            <a class="landingPage__mobileLinks" href="pages/babeczki.html"
+              >Babeczki</a
+            >
+            <a class="landingPage__mobileLinks" href="pages/desery.html"
+              >Desery</a
+            >
+            <a class="CTA" href="pages/kontakt.html">Kontakt</a>
+          </div>
         </div>
         <div class="landingPage__feature">
-          <div class="landingPage__feature--contentBox">
-            <img
-              class="landingPage__feature--image"
-              src="images/shelfieBlue.jpg"
-              alt="baking"
-            />
-            <p class="landingPage__feature--text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud.
-            </p>
+          <div class="card">
+            <div
+              class="card__section card__section--image card__section--blockImage"
+            >
+              <img
+                class="card__image card__blockImage"
+                src="images/shelfieBlue.jpg"
+                alt="cakesicles"
+              />
+            </div>
+            <div class="card__section card__info">
+              <h4 class="heading card__info--header">Me</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <script src="js/navCake.js"></script>
+    <script src="js/modernizr-webp.js"></script>
   </body>
 </html>
