@@ -756,6 +756,12 @@ p {
   }
 }
 
+.card--bordered {
+  padding: 1rem;
+  overflow: none;
+  margin: 2rem 0;
+}
+
 // .card:last-of-type {
 //   margin-bottom: 3rem;
 // }
@@ -808,6 +814,20 @@ p {
   //   max-width: 200px;
   //   padding: 0;
   // }
+}
+
+.card__image--feature {
+  width: 100%;
+  display: flex;
+  border-radius: 2rem;
+  max-width: none;
+}
+
+picture img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  border-radius: 1.4rem;
 }
 
 .card__blockImage {
