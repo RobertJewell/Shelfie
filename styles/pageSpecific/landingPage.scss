@@ -1,0 +1,192 @@
+//main content spacing
+.landingPage__main {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  @include for-tablet-portrait-up() {
+    padding: 0rem;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+.landingPage__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  // height: 100vh;
+  align-items: center;
+  position: relative;
+  @include for-tablet-portrait-up() {
+    // height: calc(100vh - 50px);
+    // bottom: 20px;
+    max-height: 700px;
+    min-height: 500px;
+  }
+  @include for-desktop-up() {
+    // height: calc(100vh - 70px);
+    max-height: 900px;
+    min-height: 750px;
+  }
+}
+
+//landing feature
+.landingPage__feature {
+  display: none;
+  padding: 1rem;
+  @include for-tablet-portrait-up() {
+    display: block;
+  }
+}
+
+.landingPage__feature--contentBox {
+  padding: 1rem 1.2rem;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: (0px 3px 3px rgba(0, 15, 58, 0.1)),
+    (0px 5px 15px rgba(0, 15, 58, 0.1));
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  @include for-tablet-landscape-up() {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.landingPage__feature--text {
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+  color: $text-color-main;
+}
+
+.landingPage__feature--image {
+  display: none;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  width: 100%;
+  @include for-tablet-portrait-up() {
+    display: block;
+  }
+}
+
+//display mobile links
+
+.landingPage__mobileLinksWrapper {
+  border-radius: 2rem;
+  background-color: $bg-color-main;
+  margin: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  @include for-tablet-portrait-up() {
+    display: none;
+  }
+}
+
+.landingPage__mobileLinks {
+  display: block;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  @include for-small-phone-only() {
+    margin-bottom: 2rem;
+  }
+  @include for-tablet-portrait-up() {
+    display: none;
+  }
+}
+
+.landingPage__BG--container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+  z-index: -1;
+}
+
+.landingPage__BG {
+  position: relative;
+  overflow: none;
+  background-color: $bg-color-main;
+  border-radius: 50%;
+  width: 2000px;
+  height: 2000px;
+  bottom: 600px;
+  display: none;
+  @include for-tablet-portrait-up() {
+    display: block;
+    right: calc(-50vw + 30px);
+    bottom: 900px;
+  }
+  @include for-tablet-landscape-up() {
+    right: calc(-50vw + 60px);
+    bottom: 800px;
+  }
+}
+
+.landing__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+//Feature detected background image selection
+
+//landing - classic cake image
+.no-webpalpha .landing__background--classic {
+  background-image: url(../images/Cakes/large/png/cake-classic-01--large.png);
+}
+
+.webpalpha .landing__background--classic {
+  background-image: url(../images/Cakes/large/webp/cake-classic-01--large.webp);
+}
+
+//scale and position
+.landing__background--classic {
+  background-position: left -100px top 450px;
+  background-size: 200px;
+  @include for-tablet-portrait-up() {
+    background-size: 400px;
+    background-position: -200px 300px;
+    display: block;
+  }
+  @include for-desktop-up() {
+    background-size: 500px;
+    background-position: -200px 300px;
+  }
+}
+
+.no-webpalpha .landing__background--naked {
+  background-image: url(../images/Cakes/large/png/cake-naked-01--large.png);
+}
+
+.webpalpha .landing__background--naked {
+  background-image: url(../images/Cakes/large/webp/cake-naked-01--large.webp);
+}
+
+.landing__background--naked {
+  background-position: right -120px top 150px;
+  background-size: 200px;
+  // display: none;
+  @include for-tablet-portrait-up() {
+    background-position: right -200px top 50px;
+    background-size: 400px;
+    display: block;
+  }
+  @include for-desktop-up() {
+    background-size: 500px;
+    background-position: right -300px top 60px;
+  }
+}
+
+#largeClassicCake {
+  position: absolute;
+  left: -750px;
+  top: 200px;
+}
+
+#largeNakedCake {
+  position: absolute;
+  right: -750px;
+}

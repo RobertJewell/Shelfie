@@ -18,7 +18,7 @@
   margin-left: auto;
   max-width: 640px;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @media (min-width: 640px) {
@@ -45,6 +45,13 @@
   }
 }
 
+.container__small {
+  max-width: 720px;
+  margin: auto;
+  padding: 0 4rem;
+  margin-bottom: 2rem;
+}
+
 .container--wide {
   max-width: none;
   background-color: #fdfbf7;
@@ -65,13 +72,9 @@
   height: 100vh;
 }
 
-.container__small {
-  max-width: 720px;
-  margin: auto;
-  padding: 0 4rem;
-  margin-bottom: 2rem;
-}
-
+/* 
+--- base styling ---
+*/
 html {
   background-color: #e2f5ff;
 }
@@ -108,42 +111,6 @@ a {
 
 p {
   line-height: 1.5rem;
-}
-
-.CTA {
-  background: #df7f93;
-  color: white;
-  border-radius: 40px;
-  padding: 0.6rem 2.5rem;
-  -webkit-box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
-          box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
-  -webkit-transition: bottom ease-out 200ms;
-  transition: bottom ease-out 200ms;
-  -webkit-transition: -webkit-box-shadow ease-out 200ms;
-  transition: -webkit-box-shadow ease-out 200ms;
-  transition: box-shadow ease-out 200ms;
-  transition: box-shadow ease-out 200ms, -webkit-box-shadow ease-out 200ms;
-}
-
-@media (min-width: 640px) {
-  .CTA {
-    display: none;
-  }
-}
-
-.CTA:hover {
-  bottom: 1px;
-  -webkit-box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.4), 0px 5px 15px rgba(184, 44, 73, 0.3);
-          box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.4), 0px 5px 15px rgba(184, 44, 73, 0.3);
-}
-
-.heading {
-  font-family: "coiny", sans-serif;
-  color: #e47b90;
-}
-
-.header__container {
-  overflow: visible;
 }
 
 .navBar {
@@ -184,7 +151,7 @@ p {
   }
 }
 
-.nav-active {
+.nav--active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   position: fixed;
@@ -415,128 +382,90 @@ p {
           transform: rotate(45deg) translate(-4px, -6px);
 }
 
-.landingPage__BG--container {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.landingPage__BG {
-  position: relative;
-  overflow: none;
-  background-color: #fdfbf7;
-  border-radius: 50%;
-  width: 2000px;
-  height: 2000px;
-  bottom: 600px;
-  display: none;
+.CTA {
+  background: #df7f93;
+  color: white;
+  border-radius: 40px;
+  padding: 0.6rem 2.5rem;
+  -webkit-box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
+          box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.2), 0px 5px 15px rgba(184, 44, 73, 0.2);
+  -webkit-transition: bottom ease-out 200ms;
+  transition: bottom ease-out 200ms;
+  -webkit-transition: -webkit-box-shadow ease-out 200ms;
+  transition: -webkit-box-shadow ease-out 200ms;
+  transition: box-shadow ease-out 200ms;
+  transition: box-shadow ease-out 200ms, -webkit-box-shadow ease-out 200ms;
 }
 
 @media (min-width: 640px) {
-  .landingPage__BG {
-    display: block;
-    right: calc(-50vw + 30px);
-    bottom: 900px;
-  }
-}
-
-@media (min-width: 900px) {
-  .landingPage__BG {
-    right: calc(-50vw + 60px);
-    bottom: 800px;
-  }
-}
-
-.landingPage__BG--mobile {
-  position: absolute;
-  width: 100vw;
-  height: 80%;
-  background-image: url(../images/landingBGHorizontal--mobile.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: 0;
-}
-
-@media (min-width: 640px) {
-  .landingPage__BG--mobile {
+  .CTA {
     display: none;
   }
 }
 
-.landing__background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
+.CTA:hover {
+  bottom: 1px;
+  -webkit-box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.4), 0px 5px 15px rgba(184, 44, 73, 0.3);
+          box-shadow: 0px 3px 3px rgba(206, 105, 126, 0.4), 0px 5px 15px rgba(184, 44, 73, 0.3);
 }
 
-.no-webpalpha .landing__background--classic {
-  background-image: url(../images/Cakes/large/png/cake-classic-01--large.png);
+.heading {
+  font-family: "coiny", sans-serif;
+  color: #e47b90;
 }
 
-.webpalpha .landing__background--classic {
-  background-image: url(../images/Cakes/large/webp/cake-classic-01--large.webp);
-}
-
-.landing__background--classic {
-  background-position: left -100px top 450px;
-  background-size: 200px;
+.title {
+  font-family: "coiny", sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 @media (min-width: 640px) {
-  .landing__background--classic {
-    background-size: 400px;
-    background-position: -200px 300px;
-    display: block;
+  .title {
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .landing__background--classic {
-    background-size: 500px;
-    background-position: -200px 300px;
+  .title {
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }
 
-.no-webpalpha .landing__background--naked {
-  background-image: url(../images/Cakes/large/png/cake-naked-01--large.png);
-}
-
-.webpalpha .landing__background--naked {
-  background-image: url(../images/Cakes/large/webp/cake-naked-01--large.webp);
-}
-
-.landing__background--naked {
-  background-position: right -120px top 150px;
-  background-size: 200px;
+.subtitle {
+  margin-bottom: 2rem;
+  color: #e47b90;
+  margin-top: 80px;
 }
 
 @media (min-width: 640px) {
-  .landing__background--naked {
-    background-position: right -200px top 50px;
-    background-size: 400px;
-    display: block;
+  .subtitle {
+    margin-top: 0;
+    font-weight: 300;
+    margin-bottom: 1rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .landing__background--naked {
-    background-size: 500px;
-    background-position: right -300px top 60px;
+  .subtitle {
+    font-size: 1rem;
   }
 }
 
-#largeClassicCake {
-  position: absolute;
-  left: -750px;
-  top: 200px;
+.landingPage__main {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
 }
 
-#largeNakedCake {
-  position: absolute;
-  right: -750px;
+@media (min-width: 640px) {
+  .landingPage__main {
+    padding: 0rem;
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 
 .landingPage__content {
@@ -567,60 +496,6 @@ p {
   .landingPage__content {
     max-height: 900px;
     min-height: 750px;
-  }
-}
-
-.landingPage__main {
-  padding: 1rem;
-  text-align: center;
-  position: relative;
-}
-
-@media (min-width: 640px) {
-  .landingPage__main {
-    padding: 0rem;
-    width: 100%;
-    margin-top: 50px;
-  }
-}
-
-.title {
-  font-family: "coiny", sans-serif;
-  font-size: 3rem;
-  line-height: 3rem;
-}
-
-@media (min-width: 640px) {
-  .title {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .title {
-    font-size: 6rem;
-    line-height: 6rem;
-  }
-}
-
-.subtitle {
-  margin-bottom: 2rem;
-  color: #e47b90;
-  margin-top: 80px;
-}
-
-@media (min-width: 640px) {
-  .subtitle {
-    margin-top: 0;
-    font-weight: 300;
-    margin-bottom: 1rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .subtitle {
-    font-size: 1rem;
   }
 }
 
@@ -711,21 +586,113 @@ p {
   }
 }
 
-.main__background {
-  width: 100vw;
-  position: relative;
-  background-color: #e2f5ff;
-  padding-bottom: 2rem;
+.landingPage__BG--container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+  z-index: -1;
 }
 
-.BG__wave {
-  width: 100vw;
+.landingPage__BG {
   position: relative;
-  height: 50px;
-  background-image: url(../images/mainBGHorizontal--top.svg);
-  background-size: contain;
-  background-repeat: repeat-x;
-  margin-bottom: 2rem;
+  overflow: none;
+  background-color: #fdfbf7;
+  border-radius: 50%;
+  width: 2000px;
+  height: 2000px;
+  bottom: 600px;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .landingPage__BG {
+    display: block;
+    right: calc(-50vw + 30px);
+    bottom: 900px;
+  }
+}
+
+@media (min-width: 900px) {
+  .landingPage__BG {
+    right: calc(-50vw + 60px);
+    bottom: 800px;
+  }
+}
+
+.landing__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.no-webpalpha .landing__background--classic {
+  background-image: url(../images/Cakes/large/png/cake-classic-01--large.png);
+}
+
+.webpalpha .landing__background--classic {
+  background-image: url(../images/Cakes/large/webp/cake-classic-01--large.webp);
+}
+
+.landing__background--classic {
+  background-position: left -100px top 450px;
+  background-size: 200px;
+}
+
+@media (min-width: 640px) {
+  .landing__background--classic {
+    background-size: 400px;
+    background-position: -200px 300px;
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .landing__background--classic {
+    background-size: 500px;
+    background-position: -200px 300px;
+  }
+}
+
+.no-webpalpha .landing__background--naked {
+  background-image: url(../images/Cakes/large/png/cake-naked-01--large.png);
+}
+
+.webpalpha .landing__background--naked {
+  background-image: url(../images/Cakes/large/webp/cake-naked-01--large.webp);
+}
+
+.landing__background--naked {
+  background-position: right -120px top 150px;
+  background-size: 200px;
+}
+
+@media (min-width: 640px) {
+  .landing__background--naked {
+    background-position: right -200px top 50px;
+    background-size: 400px;
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .landing__background--naked {
+    background-size: 500px;
+    background-position: right -300px top 60px;
+  }
+}
+
+#largeClassicCake {
+  position: absolute;
+  left: -750px;
+  top: 200px;
+}
+
+#largeNakedCake {
+  position: absolute;
+  right: -750px;
 }
 
 .pageTitle {
@@ -908,13 +875,6 @@ p {
   padding: 1rem;
   overflow: none;
   margin: 2rem auto;
-}
-
-.card__container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .card__section {

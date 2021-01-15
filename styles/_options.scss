@@ -1,0 +1,80 @@
+.options {
+  padding: 0 50px;
+  max-width: 700px;
+  @include for-tablet-portrait-up() {
+    padding: 0 50px;
+    flex-wrap: wrap;
+  }
+}
+
+.options__header {
+  font-family: "coiny", sans-serif;
+  color: $highlight-color;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  word-wrap: break-word;
+  width: 100%;
+  @include for-desktop-up() {
+    font-size: 3rem;
+  }
+}
+
+.options__header--main {
+  margin-left: 1rem;
+  @include for-tablet-portrait-up() {
+    margin-left: 0;
+  }
+}
+
+.options__header--subheader {
+  font-size: 1.5rem;
+}
+
+.options__list {
+  // font-size: 1rem;
+  list-style-position: inside;
+  line-height: 2;
+}
+
+.options__list > li {
+  margin-bottom: 0.5rem;
+}
+
+.options__list--sublist {
+  margin-left: 2rem;
+}
+
+//nonMobile left/right split
+.options__large {
+  display: flex;
+  flex-direction: column;
+  @include for-tablet-portrait-up() {
+    margin: 0 -20px;
+  }
+  @include for-tablet-landscape-up() {
+    flex-direction: row;
+  }
+}
+
+// improve spacing bvetween columns
+.options__large > div {
+  flex-basis: 100%;
+  padding: 0 20px;
+}
+
+.options__list--popular {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: none;
+  h3 {
+    margin-top: 0.5rem;
+  }
+  @include for-tablet-portrait-up() {
+    padding: 1rem 50px;
+    border-radius: 16px;
+    border: $highlight-color solid 4px;
+    margin: 2.5rem -50px;
+    box-shadow: $highlight-shadow;
+  }
+}
