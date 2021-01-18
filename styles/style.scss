@@ -58,6 +58,20 @@ p {
 //navBar
 @import "./navbar";
 
+.mobileOnly {
+  display: block;
+  @include for-tablet-portrait-up {
+    display: none;
+  }
+}
+
+mobileHidden {
+  display: none;
+  @include for-tablet-portrait-up {
+    display: block;
+  }
+}
+
 .CTA {
   background: #df7f93;
   color: white;
@@ -146,6 +160,10 @@ p {
   }
 }
 
+.instafeed--round {
+  border-radius: 2rem;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -158,7 +176,6 @@ p {
     flex-direction: row;
     margin: 4rem auto;
     max-width: 600px;
-    padding: 0;
   }
   @include for-tablet-landscape-up() {
     margin: 2rem auto 2rem auto;
@@ -169,14 +186,6 @@ p {
   padding: 1rem;
   overflow: none;
   margin: 2rem auto;
-}
-
-.card__section {
-  margin: auto;
-  overflow: visible;
-  // @include for-desktop-up() {
-  //   padding: 0;
-  // }
 }
 
 .card__section--image {
@@ -211,10 +220,6 @@ p {
   @include for-narrow-phone-only() {
     max-width: 100%;
   }
-  // @include for-desktop-up() {
-  //   max-width: 200px;
-  //   padding: 0;
-  // }
 }
 
 .card__image--feature {
@@ -233,7 +238,7 @@ picture img {
 
 .card__blockImage {
   width: 80%;
-  height: 80%;
+  // height: 80%;
   border-radius: 1rem;
 }
 

@@ -1,50 +1,47 @@
-@import "../mixins";
-@import "../variables";
-
-//main content spacing
 .landingPage__main {
   padding: 1rem;
   text-align: center;
   position: relative;
-  @include for-tablet-portrait-up() {
+}
+
+@media (min-width: 640px) {
+  .landingPage__main {
     padding: 0rem;
     width: 100%;
     margin-top: 50px;
   }
 }
 
-//landing feature
 .landingPage__feature {
   padding: 2rem;
 }
 
-.landingPage__feature--text {
-  p {
-    margin: 1.5rem;
-    padding: 0 1rem;
-  }
-
-  p:last-of-type {
-    margin-bottom: 2rem;
-  }
-
-  h3 {
-    color: $highlight-color;
-    margin: 1.5rem;
-    margin-top: 2rem;
-    padding: 0 1rem;
-  }
+.landingPage__feature--text p {
+  margin: 1.5rem;
+  padding: 0 1rem;
 }
 
-//display mobile links
+.landingPage__feature--text p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.landingPage__feature--text h3 {
+  color: #e47b90;
+  margin: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
 
 .landingPage__mobileLinksWrapper {
   border-radius: 2rem;
-  background-color: $bg-color-main;
+  background-color: #fdfbf7;
   margin: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  @include for-tablet-portrait-up() {
+}
+
+@media (min-width: 640px) {
+  .landingPage__mobileLinksWrapper {
     display: none;
   }
 }
@@ -53,10 +50,16 @@
   display: block;
   margin-bottom: 3rem;
   font-size: 1rem;
-  @include for-small-phone-only() {
+}
+
+@media (max-height: 640px) {
+  .landingPage__mobileLinks {
     margin-bottom: 2rem;
   }
-  @include for-tablet-portrait-up() {
+}
+
+@media (min-width: 640px) {
+  .landingPage__mobileLinks {
     display: none;
   }
 }
@@ -68,9 +71,6 @@
   background-repeat: no-repeat;
 }
 
-//Feature detected background image selection
-
-//landing - classic cake image
 .no-webpalpha .landing__background--classic {
   background-image: url(../images/Cakes/large/png/cake-classic-01--large.png);
 }
@@ -79,16 +79,21 @@
   background-image: url(../images/Cakes/large/webp/cake-classic-01--large.webp);
 }
 
-//scale and position
 .landing__background--classic {
   background-position: left -100px top 450px;
   background-size: 200px;
-  @include for-tablet-portrait-up() {
+}
+
+@media (min-width: 640px) {
+  .landing__background--classic {
     background-size: 400px;
     background-position: -200px 300px;
     display: block;
   }
-  @include for-desktop-up() {
+}
+
+@media (min-width: 1280px) {
+  .landing__background--classic {
     background-size: 500px;
     background-position: -200px 300px;
   }
@@ -105,13 +110,18 @@
 .landing__background--naked {
   background-position: right -120px top 150px;
   background-size: 200px;
-  // display: none;
-  @include for-tablet-portrait-up() {
+}
+
+@media (min-width: 640px) {
+  .landing__background--naked {
     background-position: right -200px top 50px;
     background-size: 400px;
     display: block;
   }
-  @include for-desktop-up() {
+}
+
+@media (min-width: 1280px) {
+  .landing__background--naked {
     background-size: 500px;
     background-position: right -300px top 60px;
   }
@@ -127,3 +137,4 @@
   position: absolute;
   right: -750px;
 }
+/*# sourceMappingURL=landingPage.css.map */
