@@ -15,13 +15,38 @@
 
 //landing feature
 .landingPage__feature {
-  padding: 2rem;
+  display: none;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  @include for-tablet-portrait-up {
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+    padding-top: 1rem;
+  }
+}
+
+.landingPage__feature--image {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .landingPage__feature--text {
+  flex-basis: 90%;
+  max-width: 900px;
+
   p {
     margin: 1.5rem;
-    padding: 0 1rem;
+    // padding: 0 1rem;
   }
 
   p:last-of-type {
@@ -32,7 +57,7 @@
     color: $highlight-color;
     margin: 1.5rem;
     margin-top: 2rem;
-    padding: 0 1rem;
+    // padding: 0 1rem;
   }
 }
 

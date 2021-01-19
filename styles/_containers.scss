@@ -39,6 +39,8 @@
   padding-top: 3rem;
 
   @include for-tablet-portrait-up() {
+    background-color: $bg-color-main;
+
     margin: 2rem;
     margin-top: 0;
   }

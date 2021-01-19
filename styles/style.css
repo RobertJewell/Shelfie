@@ -63,6 +63,7 @@
 
 @media (min-width: 640px) {
   .container--wide {
+    background-color: #fdfbf7;
     margin: 2rem;
     margin-top: 0;
   }
@@ -392,12 +393,12 @@ p {
   }
 }
 
-mobileHidden {
+.mobileHidden {
   display: none;
 }
 
 @media (min-width: 640px) {
-  mobileHidden {
+  .mobileHidden {
     display: block;
   }
 }
@@ -489,12 +490,63 @@ mobileHidden {
 }
 
 .landingPage__feature {
-  padding: 2rem;
+  display: none;
+  margin-top: 4rem;
+  padding-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .landingPage__feature {
+    padding: 1rem;
+    padding-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .landingPage__feature {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 1rem;
+  }
+}
+
+.landingPage__feature--image {
+  min-width: 0;
+  min-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landingPage__feature--text {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  max-width: 900px;
 }
 
 .landingPage__feature--text p {
   margin: 1.5rem;
-  padding: 0 1rem;
 }
 
 .landingPage__feature--text p:last-of-type {
@@ -505,7 +557,6 @@ mobileHidden {
   color: #e47b90;
   margin: 1.5rem;
   margin-top: 2rem;
-  padding: 0 1rem;
 }
 
 .landingPage__mobileLinksWrapper {
@@ -756,10 +807,6 @@ mobileHidden {
   }
 }
 
-.instafeed--round {
-  border-radius: 2rem;
-}
-
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -789,7 +836,30 @@ mobileHidden {
 
 @media (min-width: 900px) {
   .card {
-    margin: 2rem auto 2rem auto;
+    margin: 3rem auto;
+  }
+}
+
+.card--info {
+  padding: 2rem 2rem;
+}
+
+.card--info p {
+  margin-bottom: 1rem;
+}
+
+.card--info ul {
+  margin-bottom: 1rem;
+}
+
+.card--info li {
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .card--info {
+    padding: 2rem 4rem;
   }
 }
 

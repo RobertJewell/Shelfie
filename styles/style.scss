@@ -65,7 +65,7 @@ p {
   }
 }
 
-mobileHidden {
+.mobileHidden {
   display: none;
   @include for-tablet-portrait-up {
     display: block;
@@ -160,10 +160,6 @@ mobileHidden {
   }
 }
 
-.instafeed--round {
-  border-radius: 2rem;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -178,7 +174,24 @@ mobileHidden {
     max-width: 600px;
   }
   @include for-tablet-landscape-up() {
-    margin: 2rem auto 2rem auto;
+    margin: 3rem auto;
+  }
+}
+
+.card--info {
+  padding: 2rem 2rem;
+  p {
+    margin-bottom: 1rem;
+  }
+  ul {
+    margin-bottom: 1rem;
+  }
+  li {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  @include for-tablet-portrait-up {
+    padding: 2rem 4rem;
   }
 }
 
