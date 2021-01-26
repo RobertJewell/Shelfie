@@ -1,3 +1,17 @@
+/* 
+WHY THIS IS IN USE:
+This is just to enable fallback from webp in CSS
+It adds classes to the root on page load so we can do this:
+
+.webp .container {
+  background-image: url('image.webp');
+}
+.no-webp .container {
+  background-image: url('image.jpg');
+}
+
+*/
+
 /*!
  * modernizr v3.6.0
  * Build https://modernizr.com/download?-webpalpha-setclasses-dontmin
