@@ -59,6 +59,12 @@
   -webkit-box-shadow: 0px 3px 3px rgba(0, 15, 58, 0.1), 0px 5px 15px rgba(0, 15, 58, 0.1);
           box-shadow: 0px 3px 3px rgba(0, 15, 58, 0.1), 0px 5px 15px rgba(0, 15, 58, 0.1);
   padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 640px) {
@@ -863,6 +869,10 @@ p {
   }
 }
 
+.card--info .no-margin {
+  margin-bottom: 0rem;
+}
+
 .card--bordered {
   padding: 1rem;
   overflow: none;
@@ -1078,5 +1088,34 @@ textarea {
 
 .description--intro {
   text-align: justify;
+}
+
+.desery--cups {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.desery--cups ul {
+  margin: 0;
+  line-height: 2;
+}
+
+.desery--cups li {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .desery--cups {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */

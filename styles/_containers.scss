@@ -37,6 +37,8 @@
   border-radius: 2rem;
   box-shadow: $main-shadow;
   padding-top: 3rem;
+  display: flex;
+  justify-content: center;
 
   @include for-tablet-portrait-up() {
     background-color: $bg-color-main;
@@ -49,3 +51,5 @@
 .container--fullpage {
   height: 100vh;
 }
+
+
