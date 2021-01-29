@@ -86,11 +86,17 @@
   }
 }
 
+.background {
+  position: relative;
+}
+
 .landing__background {
   position: absolute;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
+  overflow-y: visible;
+  z-index: -1;
 }
 
 //Feature detected background image selection

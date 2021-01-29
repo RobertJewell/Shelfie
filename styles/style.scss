@@ -25,7 +25,6 @@ body {
   font-family: "quicksand", serif;
   font-size: 0.8rem;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -323,10 +322,6 @@ picture img {
 
 //kontakt form styling
 //temp
-
-.container--fullpage {
-  align-items: center;
-}
 
 form {
   display: flex;
