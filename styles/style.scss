@@ -72,7 +72,6 @@ p {
   }
 }
 
-
 .CTA {
   background: #df7f93;
   color: white;
@@ -199,9 +198,6 @@ p {
   }
 }
 
-
-
-
 .card--bordered {
   padding: 1rem;
   overflow: none;
@@ -286,12 +282,6 @@ picture img {
 .card__info--subheader {
   font-size: 0.8rem;
   margin: 10px 0;
-}
-
-//footer
-.footer {
-  width: 100%;
-  padding-bottom: 2rem;
 }
 
 .CTA__footer {
@@ -388,7 +378,6 @@ textarea {
   ul {
     margin: 0;
     line-height: 2;
-  
   }
   li {
     margin-bottom: 0.5rem;
@@ -396,5 +385,49 @@ textarea {
   @include for-tablet-landscape-up {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 1rem 4rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+  @include for-tablet-portrait-up {
+    flex-direction: row;
+  }
+}
+
+.footer__wrapper {
+  background-color: $bg-color-main;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: $main-shadow;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-top: 1rem;
+  }
+  svg {
+    margin-right: 1rem;
+    width: 1.5rem;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+.footer__links--business {
+  display: flex;
+  text-align: start;
+
+  a {
+    @include for-tablet-landscape-up {
+      text-align: end;
+    }
   }
 }
