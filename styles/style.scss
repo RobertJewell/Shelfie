@@ -197,6 +197,12 @@ p {
   }
 }
 
+.card--info--justify {
+  P {
+    text-align: justify;
+  }
+}
+
 .card--bordered {
   padding: 1rem;
   overflow: none;
@@ -385,11 +391,11 @@ textarea {
 
 /* Footer */
 .footer {
-  padding: 1rem 4rem 2rem 4rem;
+  padding: 0 4rem 1rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 6rem;
   @include for-tablet-portrait-up {
     flex-direction: row;
   }
@@ -404,25 +410,60 @@ textarea {
 .footer__links {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
   a {
     margin-top: 1rem;
+    color: $text-color-main;
+    font-family: "quicksand", serif;
+    font-size: 0.8rem;
+    font-weight: 400;
   }
   svg {
     margin-right: 1rem;
-    width: 1.5rem;
+    height: 24px;
     vertical-align: middle;
     display: inline-block;
   }
 }
 
-.footer__links--business {
+.footer__links--social {
   display: flex;
   text-align: start;
+  align-items: center;
+  a {
+    width: 120px;
+  }
+  @include for-tablet-landscape-up {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
+.footer__links--business {
+  display: flex;
+  text-align: center;
   a {
     @include for-tablet-landscape-up {
-      text-align: end;
+      text-align: center;
     }
+  }
+}
+
+.footer__links--small {
+  font-size: 0.6rem !important;
+}
+
+.footer__links--collab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  a {
+    background-color: $highlight-color-light;
+    color: $highlight-color;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
   }
 }
