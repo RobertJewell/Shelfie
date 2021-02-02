@@ -1086,35 +1086,6 @@ textarea {
   text-align: justify;
 }
 
-.desery--cups {
-  margin: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.desery--cups ul {
-  margin: 0;
-  line-height: 2;
-}
-
-.desery--cups li {
-  margin-bottom: 0.5rem;
-}
-
-@media (min-width: 900px) {
-  .desery--cups {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* Footer */
 .footer {
   padding: 0 4rem 1rem 4rem;
@@ -1244,5 +1215,80 @@ textarea {
 
 .no-margin {
   margin: 0rem;
+}
+
+.mb-neg {
+  margin-bottom: -4rem;
+}
+
+@media (min-width: 900px) {
+  .mb-neg {
+    margin-bottom: -2rem;
+  }
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.padding-1 {
+  padding: 3rem;
+}
+
+.desery--cups {
+  margin: 2rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.desery--cups ul {
+  margin: 0;
+  line-height: 2;
+}
+
+.desery--cups li {
+  margin-bottom: 0.5rem;
+  list-style-position: inside;
+}
+
+.desery--cups--hidden {
+  display: none;
+}
+
+.desery--cups--fade {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbf700), to(#fdfbf7));
+  background: linear-gradient(#fdfbf700, #fdfbf7);
+  width: 104%;
+  height: 100%;
+  position: absolute;
+  right: -2px;
+  -webkit-transition: height;
+  transition: height;
+}
+
+.relative {
+  position: relative;
+}
+
+#desery__button {
+  background-color: #ffd6df;
+  color: #e47b90;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  max-width: 100px;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
 }
 /*# sourceMappingURL=style.css.map */

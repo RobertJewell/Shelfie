@@ -268,7 +268,6 @@ picture img {
   margin-bottom: 2rem;
   text-align: center;
   padding: 0 2rem;
-
   @include for-tablet-portrait-up() {
     text-align: start;
     padding: 1rem 3rem;
@@ -372,23 +371,6 @@ textarea {
   text-align: justify;
 }
 
-.desery--cups {
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  ul {
-    margin: 0;
-    line-height: 2;
-  }
-  li {
-    margin-bottom: 0.5rem;
-  }
-  @include for-tablet-landscape-up {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* Footer */
 .footer {
   padding: 0 4rem 1rem 4rem;
@@ -470,4 +452,62 @@ textarea {
 
 .no-margin {
   margin: 0rem;
+}
+
+.mb-neg {
+  margin-bottom: -4rem;
+  @include for-tablet-landscape-up {
+    margin-bottom: -2rem;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.padding-1 {
+  padding: 3rem;
+}
+
+.desery--cups {
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  ul {
+    margin: 0;
+    line-height: 2;
+  }
+  li {
+    margin-bottom: 0.5rem;
+    list-style-position: inside;
+  }
+}
+
+.desery--cups--hidden {
+  display: none;
+}
+
+.desery--cups--fade {
+  background: linear-gradient(#fdfbf700, #fdfbf7);
+  width: 104%;
+  height: 100%;
+  position: absolute;
+  right: -2px;
+  transition: height;
+}
+
+.relative {
+  position: relative;
+}
+
+#desery__button {
+  background-color: $highlight-color-light;
+  color: $highlight-color;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  max-width: 100px;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
 }

@@ -75,9 +75,9 @@
     </div>
 
     <!-- Cup deserts -->
-    <div class="container--wide">
-      <div class="container">
-        <div class="card--info">
+    <div class="container mb-neg">
+      <div class="card card-info">
+        <div class="flex-column padding-1">
           <h1 class="heading card__info--header">deserki w pucharkach</h1>
           <h5 class="card__info--subheader">
             Minimalna ilość zamówienia - 10 sztuk z jednego rodzaju
@@ -86,14 +86,20 @@
             <ul>
               <li>waniliowa panna cotta z prażonym jabłkiem i Müsli</li>
               <li>panna cotta z białą czekoladą oraz malinami/ truskawkami</li>
-              <li>kajmakowa panna cotta z wiśniami</li>
-              <li>
-                kawowa panna cotta z likierem kawowym i galaretką espresso
-              </li>
+            </ul>
+            <div class="relative">
+              <div class="desery--cups--fade"></div>
+              <ul>
+                <li>kajmakowa panna cotta z wiśniami</li>
+                <li>
+                  kawowa panna cotta z likierem kawowym i galaretką espresso
+                </li>
+              </ul>
+            </div>
+
+            <ul class="desery--cups--hidden">
               <li>panna cotta z Nutellą</li>
               <li>jagodowa panna cotta</li>
-            </ul>
-            <ul>
               <li>serniczek Raffaello z malinami</li>
               <li>serniczek Ferrero Rocher</li>
               <li>
@@ -103,8 +109,6 @@
               <li>tiramisu ajerkoniakowe</li>
               <li>pudding chia z malinami</li>
               <li>pudding z tapioki</li>
-            </ul>
-            <ul>
               <li>deserek Leśny Mech</li>
               <li>deserek Kinder County</li>
               <li>deserek Oreo</li>
@@ -114,6 +118,7 @@
               <li>deserek Reese’s</li>
               <li>deserki Snickers</li>
             </ul>
+            <button id="desery__button">see more</button>
           </div>
         </div>
       </div>
@@ -122,7 +127,7 @@
     <!-- cards -->
     <div class="container">
       <div class="container__cards">
-        <div class="card" data-aos="fade-up" data-aos-offset="-100">
+        <div class="card">
           <div
             class="card__section card__section--image card__section--blockImage"
           >
@@ -508,5 +513,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="../js/deseryCups-expand.js"></script>
   </body>
 </html>
