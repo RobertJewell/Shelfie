@@ -1242,4 +1242,8 @@ textarea {
   padding: 0.5rem 1rem;
   border-radius: 20px;
 }
+
+.no-margin {
+  margin: 0rem;
+}
 /*# sourceMappingURL=style.css.map */

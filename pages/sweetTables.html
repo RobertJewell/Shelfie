@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <title>Słodki Stół</title>
   </head>
@@ -37,11 +38,13 @@
           <a class="header__link--anchor" href="FAQ.html">FAQ</a>
           <a
             class="header__link--anchor header__link--mobileOnly"
-            href="kontakt.html"
+            href="mailto:zjedzmy.troche.slodkosci@onet.pl"
             >Kontakt</a
           >
         </div>
-        <a class="header__CTA" href="kontakt.html">Kontakt</a>
+        <a class="header__CTA" href="mailto:zjedzmy.troche.slodkosci@onet.pl"
+          >Kontakt</a
+        >
       </header>
     </section>
 
@@ -86,7 +89,7 @@
           <p>Zazwyczaj odpisuje w przeciągu 24-48h.</p>
         </div>
       </div>
-      <div class="card card--bordered">
+      <div class="card card--bordered" data-aos="fade-up">
         <picture class="card__image card__image--feature">
           <source
             srcset="../images/sweet_table/sweet-table-01.webp"
@@ -102,7 +105,7 @@
           />
         </picture>
       </div>
-      <div class="card card--bordered">
+      <div class="card card--bordered" data-aos="fade-up">
         <picture class="card__image card__image--feature">
           <source
             srcset="../images/sweet_table/sweet-table-02.webp"
@@ -119,7 +122,7 @@
           />
         </picture>
       </div>
-      <div class="card card--bordered">
+      <div class="card card--bordered" data-aos="fade-up">
         <picture class="card__image card__image--feature">
           <source
             srcset="../images/sweet_table/sweet-table-03.webp"
@@ -137,11 +140,18 @@
       </div>
     </div>
 
+    <a class="CTA CTA__footer" href="mailto:zjedzmy.troche.slodkosci@onet.pl"
+      >Kontakt</a
+    >
+
     <!-- footer -->
     <div class="footer__wrapper">
       <section class="container footer">
         <div class="footer__links footer__links--social">
-          <a href="https://www.instagram.com/zjedzmy_troche_slodkosci/">
+          <a
+            href="https://www.instagram.com/zjedzmy_troche_slodkosci/"
+            target="_blank"
+          >
             <svg
               viewBox="0 0 36 36"
               version="1.1"
@@ -166,7 +176,10 @@
             </svg>
             instagram
           </a>
-          <a href="https://www.facebook.com/zjedzmytrocheslodkosci/">
+          <a
+            href="https://www.facebook.com/zjedzmytrocheslodkosci/"
+            target="_blank"
+          >
             <svg
               viewBox="0 0 36 36"
               version="1.1"
@@ -199,16 +212,20 @@
           </a>
           <a class="footer__links--small"
             >Zjedzmy Trochę Słodkości - Emilia Sulińska.<br />
-            Cyprysowa X, Gdańsk Jasień<br />
+            Cyprysowa 38, Gdańsk Jasień<br />
             NIP: 5833357556</a
           >
         </div>
         <div class="footer__links footer__links--collab">
-          <a href="">collaborate</a>
+          <a href="mailto:zjedzmy.troche.slodkosci@onet.pl">współpraca</a>
         </div>
       </section>
     </div>
 
     <script src="../js/navCake.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
