@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Zjedzmy trochę słodkości</title>
   </head>
@@ -65,8 +66,17 @@
       <div class="container">
         <!-- titles and mobile links -->
         <div class="landingPage__main">
-          <p class="subtitle">Pracownia cukiernicza</p>
-          <h1 class="title">Zjedzmy trochę<br />słodkości</h1>
+          <p data-aos="fade-in" data-aos-delay="200" class="subtitle">
+            Pracownia cukiernicza
+          </p>
+          <h1
+            data-aos="fade-in"
+            data-aos-delay="500"
+            data-aos-duration="500"
+            class="title"
+          >
+            Zjedzmy trochę<br />słodkości
+          </h1>
           <div class="landingPage__mobileLinksWrapper">
             <a class="landingPage__mobileLinks" href="pages/torty.html"
               >Torty</a
@@ -82,7 +92,12 @@
         </div>
 
         <!-- card -->
-        <div class="container--wide landingPage__feature">
+        <div
+          class="container--wide landingPage__feature"
+          data-aos="fade-up"
+          data-aos-delay="800"
+          data-aos-duration="500"
+        >
           <div class="landingPage__feature--image">
             <img
               class="card__image card__blockImage"
@@ -189,5 +204,9 @@
 
     <script src="js/navCake.js"></script>
     <script src="js/modernizr-webp.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
