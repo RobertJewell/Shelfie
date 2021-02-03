@@ -8,9 +8,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 
-    <title>Torty</title>
+    <title>Babeczki</title>
   </head>
 
   <body>
@@ -55,6 +60,32 @@
     <!-- title and description -->
     <div class="container">
       <h1 class="pageTitle">babeczki</h1>
+
+      <!-- Swiper -->
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                class="card__image card__blockImage swiper__image--border"
+                src="../images/sweets/cakesicles.jpg"
+                alt="cakesicles"
+              />
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper--color"></div>
+          <div class="swiper-button-next swiper--color"></div>
+        </div>
+      </div>
+
       <div class="card card--bordered">
         <div class="card--info card--info--justify">
           <p>
@@ -84,8 +115,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Swiper -->
 
     <!-- options -->
     <div class="container--wide">
@@ -279,5 +308,8 @@
     </div>
 
     <script src="../js/navCake.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
   </body>
 </html>
