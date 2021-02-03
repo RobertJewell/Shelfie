@@ -85,6 +85,23 @@
       </div>
     </div>
 
+    <!-- Swiper -->
+    <!-- Slider main container -->
+    <div class="container">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
     <!-- options -->
     <div class="container--wide">
       <div class="container options">
@@ -277,5 +294,12 @@
     </div>
 
     <script src="../js/navCake.js"></script>
+    <!-- Tiny-Swiper JS -->
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+
+    <!-- Initialize Tiny-Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container");
+    </script>
   </body>
 </html>
