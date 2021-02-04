@@ -1325,6 +1325,11 @@ textarea {
 
 .swiper__image--border {
   border: #fdfbf7 10px solid;
+  border-radius: 1rem;
+}
+
+.swiper__image--border img {
+  border-radius: 0.4rem;
 }
 
 .swiper--color {

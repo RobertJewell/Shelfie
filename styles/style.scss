@@ -535,6 +535,10 @@ textarea {
 
 .swiper__image--border {
   border: $bg-color-main 10px solid;
+  border-radius: 1rem;
+  img {
+    border-radius: 0.4rem;
+  }
 }
 
 .swiper--color {
