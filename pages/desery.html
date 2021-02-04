@@ -9,6 +9,12 @@
     />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 
     <title>Słodkości</title>
@@ -76,12 +82,34 @@
 
     <!-- Cup deserts -->
     <div class="container mb-neg">
-      <div class="card card-info">
+      <div class="card">
         <div class="flex-column padding-1">
           <h1 class="heading card__info--header">deserki w pucharkach</h1>
           <h5 class="card__info--subheader">
             Minimalna ilość zamówienia - 10 sztuk z jednego rodzaju
           </h5>
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  class="card__image card__blockImage swiper__image--border"
+                  src="../images/sweets/cakesicles.jpg"
+                  alt="cakesicles"
+                />
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper--color"></div>
+            <div class="swiper-button-next swiper--color"></div>
+          </div>
+
           <div class="desery--cups">
             <ul>
               <li>waniliowa panna cotta z prażonym jabłkiem i Müsli</li>
@@ -547,6 +575,10 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
+
     <script src="../js/deseryCups-expand.js"></script>
   </body>
 </html>
