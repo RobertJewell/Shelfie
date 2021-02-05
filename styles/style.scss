@@ -538,6 +538,10 @@ textarea {
   overflow-y: visible;
   img {
     border: 0.5rem $bg-color-main solid;
+    overflow-y: visible;
+  }
+  picture {
+    overflow-y: visible;
   }
 }
 

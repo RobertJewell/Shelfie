@@ -1331,6 +1331,11 @@ textarea {
 
 .swiper-slide img {
   border: 0.5rem #fdfbf7 solid;
+  overflow-y: visible;
+}
+
+.swiper-slide picture {
+  overflow-y: visible;
 }
 
 .swiper--color {
