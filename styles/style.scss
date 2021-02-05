@@ -516,6 +516,9 @@ textarea {
 }
 
 // swiper
+.swiper-wrapper {
+  overflow-y: visible;
+}
 
 .swiper-container {
   width: 100%;
@@ -525,6 +528,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: visible;
 }
 
 .swiper-slide {
