@@ -1328,8 +1328,9 @@ textarea {
           align-items: center;
 }
 
-.swiper-slide img {
+.swiper-slide picture {
   border: 0.5rem #fdfbf7 solid;
+  background-color: #fdfbf7;
 }
 
 .swiper--color {

@@ -535,9 +535,13 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  img {
+  picture {
     border: 0.5rem $bg-color-main solid;
+    background-color: $bg-color-main;
   }
+  // img {
+  //   border: 0.5rem $bg-color-main solid;
+  // }
 }
 
 .swiper--color {
