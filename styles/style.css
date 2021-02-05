@@ -1339,7 +1339,7 @@ textarea {
 
 .swiper__image--border img {
   border-radius: 0.4rem;
-  height: 100%;
+  margin-bottom: 10px;
 }
 
 .swiper--color {
