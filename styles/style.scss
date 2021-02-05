@@ -536,16 +536,7 @@ textarea {
   justify-content: center;
   align-items: center;
   img {
-    height: 280px;
-  }
-}
-
-.swiper__image--border {
-  border: $bg-color-main 10px solid;
-  border-radius: 1rem;
-  img {
-    border-radius: 0.4rem;
-    margin-bottom: 10px;
+    border: 0.5rem $bg-color-main solid;
   }
 }
 

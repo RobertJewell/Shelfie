@@ -1329,17 +1329,7 @@ textarea {
 }
 
 .swiper-slide img {
-  height: 280px;
-}
-
-.swiper__image--border {
-  border: #fdfbf7 10px solid;
-  border-radius: 1rem;
-}
-
-.swiper__image--border img {
-  border-radius: 0.4rem;
-  margin-bottom: 10px;
+  border: 0.5rem #fdfbf7 solid;
 }
 
 .swiper--color {
