@@ -535,13 +535,10 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  picture {
-    border: 0.5rem $bg-color-main solid;
-    background-color: $bg-color-main;
+  overflow-y: visible;
+  img {
+    // border: 0.5rem $bg-color-main solid;
   }
-  // img {
-  //   border: 0.5rem $bg-color-main solid;
-  // }
 }
 
 .swiper--color {
