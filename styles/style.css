@@ -1328,6 +1328,10 @@ textarea {
           align-items: center;
 }
 
+.swiper-slide picture {
+  height: 100%;
+}
+
 .swiper__image--border {
   border: #fdfbf7 10px solid;
   border-radius: 1rem;
@@ -1335,6 +1339,7 @@ textarea {
 
 .swiper__image--border img {
   border-radius: 0.4rem;
+  height: 100%;
 }
 
 .swiper--color {
