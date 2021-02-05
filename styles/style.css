@@ -1302,7 +1302,7 @@ textarea {
 .swiper-container {
   width: 100%;
   max-width: 500px;
-  max-height: 300px;
+  max-height: 320px;
   margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1327,6 +1327,10 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   overflow-y: visible;
+}
+
+.swiper-slide img {
+  border: 0.5rem #fdfbf7 solid;
 }
 
 .swiper--color {
