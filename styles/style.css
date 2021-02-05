@@ -1336,6 +1336,7 @@ textarea {
 
 .swiper-slide picture {
   overflow-y: visible;
+  margin: 0.5rem;
 }
 
 .swiper--color {
