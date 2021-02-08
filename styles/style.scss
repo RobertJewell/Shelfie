@@ -25,6 +25,9 @@ body {
   font-family: "quicksand", serif;
   font-size: 0.8rem;
   font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -377,13 +380,13 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 6rem;
-  @include for-tablet-portrait-up {
-    flex-direction: row;
-  }
+  //  @include for-tablet-portrait-up {
+  flex-direction: row;
 }
 
 .footer__wrapper {
+  position: relative;
+  margin-top: auto;
   background-color: $bg-color-main;
   border-radius: 2rem 2rem 0 0;
   box-shadow: $main-shadow;
