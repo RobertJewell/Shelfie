@@ -380,16 +380,21 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  //  @include for-tablet-portrait-up {
-  flex-direction: row;
+  @include for-tablet-portrait-up {
+    flex-direction: row;
+  }
 }
 
 .footer__wrapper {
   position: relative;
-  margin-top: auto;
   background-color: $bg-color-main;
   border-radius: 2rem 2rem 0 0;
   box-shadow: $main-shadow;
+  margin-top: 2rem;
+  margin-top: auto;
+  @include for-tablet-landscape-up {
+    justify-self: flex-end;
+  }
 }
 
 .footer__links {
