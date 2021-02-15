@@ -557,3 +557,25 @@ textarea {
 .swiper--color {
   color: $highlight-color !important;
 }
+
+.CTA--landingDiv {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.CTA--landing {
+  position: relative;
+  padding: 0.8rem 1.5rem;
+  background-color: $highlight-color;
+  font-size: 1rem;
+  color: $bg-color-main;
+  border-radius: 2rem;
+  box-shadow: $highlight-shadow;
+  top: 0;
+  transition: top 200ms;
+}
+
+.CTA--landing:hover {
+  top: -2px;
+}
