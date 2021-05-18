@@ -16,115 +16,115 @@
 
 //background color
 html {
-  background-color: $bg-color-blue;
+	background-color: $bg-color-blue;
 }
 
 //fonts
 body {
-  color: $text-color-main;
-  font-family: "quicksand", serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+	color: $text-color-main;
+	font-family: "quicksand", serif;
+	font-size: 0.8rem;
+	font-weight: 400;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 h1 {
-  color: $highlight-color;
-  font-weight: normal;
+	color: $highlight-color;
+	font-weight: normal;
 }
 
 button {
-  border: none;
-  background: none;
-  padding: 0.5rem;
-  font-weight: 700;
+	border: none;
+	background: none;
+	padding: 0.5rem;
+	font-weight: 700;
 }
 
 button:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 //links
 a {
-  color: $highlight-color;
-  font-weight: 700;
-  text-decoration: none;
+	color: $highlight-color;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 p {
-  line-height: 1.5rem;
+	line-height: 1.5rem;
 }
 
 //navBar
 @import "./navbar";
 
 .mobileOnly {
-  display: block;
-  @include for-tablet-portrait-up {
-    display: none;
-  }
+	display: block;
+	@include for-tablet-portrait-up {
+		display: none;
+	}
 }
 
 .mobileHidden {
-  display: none;
-  @include for-tablet-portrait-up {
-    display: block;
-  }
+	display: none;
+	@include for-tablet-portrait-up {
+		display: block;
+	}
 }
 
 .CTA {
-  background: #df7f93;
-  color: white;
-  border-radius: 40px;
-  padding: 0.6rem 2.5rem;
-  box-shadow: $highlight-shadow;
-  transition: bottom ease-out 200ms;
-  transition: box-shadow ease-out 200ms;
-  @include for-tablet-portrait-up() {
-    display: none;
-  }
+	background: #df7f93;
+	color: white;
+	border-radius: 40px;
+	padding: 0.6rem 2.5rem;
+	box-shadow: $highlight-shadow;
+	transition: bottom ease-out 200ms;
+	transition: box-shadow ease-out 200ms;
+	@include for-tablet-portrait-up() {
+		display: none;
+	}
 }
 
 .CTA:hover {
-  bottom: 1px;
-  box-shadow: (0px 3px 3px rgba(206, 105, 126, 0.4)),
-    (0px 5px 15px rgba(184, 44, 73, 0.3));
+	bottom: 1px;
+	box-shadow: (0px 3px 3px rgba(206, 105, 126, 0.4)),
+		(0px 5px 15px rgba(184, 44, 73, 0.3));
 }
 
 .heading {
-  font-family: "coiny", sans-serif;
-  color: $highlight-color;
+	font-family: "coiny", sans-serif;
+	color: $highlight-color;
 }
 
 .title {
-  font-family: "coiny", sans-serif;
-  // margin-bottom: 1rem;
-  font-size: 3rem;
-  line-height: 3rem;
-  @include for-tablet-portrait-up() {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-  @include for-desktop-up() {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
+	font-family: "coiny", sans-serif;
+	// margin-bottom: 1rem;
+	font-size: 3rem;
+	line-height: 3rem;
+	@include for-tablet-portrait-up() {
+		font-size: 4rem;
+		line-height: 4rem;
+	}
+	@include for-desktop-up() {
+		font-size: 5rem;
+		line-height: 5rem;
+	}
 }
 
 .subtitle {
-  margin-bottom: 2rem;
-  color: $highlight-color;
-  margin-top: 80px;
-  @include for-tablet-portrait-up() {
-    margin-top: 0;
-    font-weight: 300;
-    margin-bottom: 1rem;
-  }
-  @include for-desktop-up() {
-    font-size: 1rem;
-  }
+	margin-bottom: 2rem;
+	color: $highlight-color;
+	margin-top: 80px;
+	@include for-tablet-portrait-up() {
+		margin-top: 0;
+		font-weight: 300;
+		margin-bottom: 1rem;
+	}
+	@include for-desktop-up() {
+		font-size: 1rem;
+	}
 }
 
 //MAIN PAGES
@@ -133,17 +133,17 @@ p {
 @import "./pageSpecific/landingPage.scss";
 
 .pageTitle {
-  font-family: "coiny", sans-serif;
-  text-transform: uppercase;
-  margin: 3rem auto 1rem auto;
-  font-size: 3rem;
-  @include for-desktop-up() {
-    font-size: 4rem;
-  }
+	font-family: "coiny", sans-serif;
+	text-transform: uppercase;
+	margin: 3rem auto 1rem auto;
+	font-size: 3rem;
+	@include for-desktop-up() {
+		font-size: 4rem;
+	}
 }
 
 .FAQtitle {
-  margin-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 
 @import "./options";
@@ -154,428 +154,428 @@ p {
 
 //temp
 .container__cards {
-  @include for-desktop-up() {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+	@include for-desktop-up() {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  margin: 4rem 2rem;
-  background-color: $bg-color-main;
-  overflow: visible;
-  border-radius: 2rem;
-  box-shadow: $main-shadow;
-  @include for-tablet-portrait-up() {
-    flex-direction: row;
-    margin: 4rem auto;
-    max-width: 600px;
-  }
-  @include for-tablet-landscape-up() {
-    margin: 3rem auto;
-  }
+	display: flex;
+	flex-direction: column;
+	margin: 4rem 2rem;
+	background-color: $bg-color-main;
+	overflow: visible;
+	border-radius: 2rem;
+	box-shadow: $main-shadow;
+	@include for-tablet-portrait-up() {
+		flex-direction: row;
+		margin: 4rem auto;
+		max-width: 600px;
+	}
+	@include for-tablet-landscape-up() {
+		margin: 3rem auto;
+	}
 }
 
 .card--info {
-  padding: 2rem 2rem;
-  p {
-    margin-bottom: 1rem;
-  }
-  ul {
-    margin-bottom: 1rem;
-  }
-  li {
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  @include for-tablet-portrait-up {
-    padding: 2rem 4rem;
-  }
-  .no-margin {
-    margin-bottom: 0rem;
-  }
+	padding: 2rem 2rem;
+	p {
+		margin-bottom: 1rem;
+	}
+	ul {
+		margin-bottom: 1rem;
+	}
+	li {
+		margin-left: 2rem;
+		margin-bottom: 0.5rem;
+	}
+	@include for-tablet-portrait-up {
+		padding: 2rem 4rem;
+	}
+	.no-margin {
+		margin-bottom: 0rem;
+	}
 }
 
 .card--info--justify {
-  P {
-    text-align: justify;
-  }
+	P {
+		text-align: justify;
+	}
 }
 
 .card--bordered {
-  padding: 1rem;
-  overflow: none;
-  // margin: 2rem auto;
+	padding: 1rem;
+	overflow: none;
+	// margin: 2rem auto;
 }
 
 .card__section--image {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  position: relative;
-  bottom: 4rem;
-  @include for-tablet-portrait-up() {
-    bottom: 3rem;
-  }
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	position: relative;
+	bottom: 4rem;
+	@include for-tablet-portrait-up() {
+		bottom: 3rem;
+	}
 }
 
 .card__section--blockImage {
-  bottom: 0;
-  margin: 2rem;
-  margin-bottom: 4rem;
+	bottom: 0;
+	margin: 2rem;
+	margin-bottom: 4rem;
 
-  @include for-tablet-portrait-up() {
-    margin: 0;
-    width: 60%;
-    min-height: 300px;
-    min-width: 300px;
-  }
+	@include for-tablet-portrait-up() {
+		margin: 0;
+		width: 60%;
+		min-height: 300px;
+		min-width: 300px;
+	}
 }
 
 .card__image {
-  max-width: 100%;
-  margin: auto;
-  max-width: 300px;
-  max-height: 300px;
-  @include for-narrow-phone-only() {
-    max-width: 100%;
-  }
+	max-width: 100%;
+	margin: auto;
+	max-width: 300px;
+	max-height: 300px;
+	@include for-narrow-phone-only() {
+		max-width: 100%;
+	}
 }
 
 .card__image--feature {
-  width: 100%;
-  display: flex;
-  border-radius: 2rem;
-  max-width: none;
+	width: 100%;
+	display: flex;
+	border-radius: 2rem;
+	max-width: none;
 }
 
 picture img {
-  object-fit: cover;
-  height: auto;
-  width: 100%;
-  border-radius: 1.4rem;
+	object-fit: cover;
+	height: auto;
+	width: 100%;
+	border-radius: 1.4rem;
 }
 
 .card__blockImage {
-  width: 80%;
-  // height: 80%;
-  border-radius: 1rem;
+	width: 80%;
+	// height: 80%;
+	border-radius: 1rem;
 }
 
 .card__info {
-  margin-top: -2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  padding: 0 2rem;
-  @include for-tablet-portrait-up() {
-    text-align: start;
-    padding: 1rem 3rem;
-    padding-left: 0;
-    margin: auto;
-    width: 350px;
-  }
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding: 0 2rem;
+	@include for-tablet-portrait-up() {
+		text-align: start;
+		padding: 1rem 3rem;
+		padding-left: 0;
+		margin: auto;
+		width: 350px;
+	}
 }
 
 .card__info--header {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-transform: uppercase;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	text-transform: uppercase;
 }
 
 .card__info--subheader {
-  font-size: 0.8rem;
-  margin: 10px 0;
+	font-size: 0.8rem;
+	margin: 10px 0;
 }
 
 .CTA__footer {
-  display: block;
-  width: 140px;
-  margin: 4rem auto;
-  text-align: center;
+	display: block;
+	width: 140px;
+	margin: 4rem auto;
+	text-align: center;
 }
 
 .card__cupcake {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .card__section--cupcakeTop {
-  display: flex;
-  flex-direction: column-reverse;
-  padding-bottom: 1rem;
-  text-align: center;
-  @include for-tablet-portrait-up() {
-    text-align: start;
+	display: flex;
+	flex-direction: column-reverse;
+	padding-bottom: 1rem;
+	text-align: center;
+	@include for-tablet-portrait-up() {
+		text-align: start;
 
-    padding-bottom: 0;
-    flex-direction: row;
-  }
+		padding-bottom: 0;
+		flex-direction: row;
+	}
 }
 
 .card__image--cupcake {
-  max-width: 250px;
-  margin-left: auto;
-  margin-bottom: 3rem;
-  border: solid $bg-color-main;
-  @include for-tablet-portrait-up() {
-    margin-left: 2rem;
-    max-width: 200px;
-    margin-bottom: 0rem;
-  }
+	max-width: 250px;
+	margin-left: auto;
+	margin-bottom: 3rem;
+	border: solid $bg-color-main;
+	@include for-tablet-portrait-up() {
+		margin-left: 2rem;
+		max-width: 200px;
+		margin-bottom: 0rem;
+	}
 }
 
 //kontakt form styling
 //temp
 
 form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
 }
 
 input {
-  margin-bottom: 1rem;
-  margin-top: 10px;
-  border: none;
-  box-shadow: none;
-  height: 2rem;
-  border-radius: 10px;
-  padding: 0 10px;
+	margin-bottom: 1rem;
+	margin-top: 10px;
+	border: none;
+	box-shadow: none;
+	height: 2rem;
+	border-radius: 10px;
+	padding: 0 10px;
 }
 
 textarea {
-  height: 120px;
-  margin-bottom: 1rem;
-  border: none;
-  margin-top: 10px;
-  border-radius: 10px;
-  padding: 10px;
+	height: 120px;
+	margin-bottom: 1rem;
+	border: none;
+	margin-top: 10px;
+	border-radius: 10px;
+	padding: 10px;
 }
 
 .inputButton {
-  background-color: $highlight-color;
-  font-family: "quicksand";
-  font-weight: bold;
-  color: #fdfbf7;
-  font-size: 0.8rem;
+	background-color: $highlight-color;
+	font-family: "quicksand";
+	font-weight: bold;
+	color: #fdfbf7;
+	font-size: 0.8rem;
 }
 
 .FAQ li {
-  margin-top: 1.5rem;
-  font-weight: bold;
-  color: $highlight-color;
+	margin-top: 1.5rem;
+	font-weight: bold;
+	color: $highlight-color;
 }
 
 .description--intro {
-  text-align: justify;
+	text-align: justify;
 }
 
 /* Footer */
 .footer {
-  padding: 0 4rem 1rem 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  @include for-tablet-portrait-up {
-    flex-direction: row;
-  }
+	padding: 0 4rem 1rem 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@include for-tablet-portrait-up {
+		flex-direction: row;
+	}
 }
 
 .footer__wrapper {
-  position: relative;
-  background-color: $bg-color-main;
-  border-radius: 2rem 2rem 0 0;
-  box-shadow: $main-shadow;
-  margin-top: 2rem;
-  margin-top: auto;
-  @include for-tablet-landscape-up {
-    justify-self: flex-end;
-  }
+	position: relative;
+	background-color: $bg-color-main;
+	border-radius: 2rem 2rem 0 0;
+	box-shadow: $main-shadow;
+	margin-top: 2rem;
+	margin-top: auto;
+	@include for-tablet-landscape-up {
+		justify-self: flex-end;
+	}
 }
 
 .footer__links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 
-  a {
-    margin-top: 1rem;
-    color: $text-color-main;
-    font-family: "quicksand", serif;
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
-  svg {
-    margin-right: 1rem;
-    height: 24px;
-    vertical-align: middle;
-    display: inline-block;
-  }
+	a {
+		margin-top: 1rem;
+		color: $text-color-main;
+		font-family: "quicksand", serif;
+		font-size: 0.8rem;
+		font-weight: 400;
+	}
+	svg {
+		margin-right: 1rem;
+		height: 24px;
+		vertical-align: middle;
+		display: inline-block;
+	}
 }
 
 .footer__links--social {
-  display: flex;
-  text-align: start;
-  align-items: center;
-  a {
-    width: 120px;
-  }
-  @include for-tablet-landscape-up {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+	display: flex;
+	text-align: start;
+	align-items: center;
+	a {
+		width: 120px;
+	}
+	@include for-tablet-landscape-up {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 .footer__links--business {
-  display: flex;
-  text-align: center;
-  a {
-    @include for-tablet-landscape-up {
-      text-align: center;
-    }
-  }
+	display: flex;
+	text-align: center;
+	a {
+		@include for-tablet-landscape-up {
+			text-align: center;
+		}
+	}
 }
 
 .footer__links--small {
-  font-size: 0.6rem !important;
+	font-size: 0.6rem !important;
 }
 
 .footer__links--collab {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  a {
-    background-color: $highlight-color-light;
-    color: $highlight-color;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	a {
+		background-color: $highlight-color-light;
+		color: $highlight-color;
+		font-weight: bold;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+	}
 }
 
 .no-margin {
-  margin: 0rem;
+	margin: 0rem;
 }
 
 .mb-neg {
-  margin-bottom: -4rem;
-  @include for-tablet-landscape-up {
-    margin-bottom: -2rem;
-  }
+	margin-bottom: -4rem;
+	@include for-tablet-landscape-up {
+		margin-bottom: -2rem;
+	}
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .padding-1 {
-  padding: 0 3rem;
+	padding: 0 3rem;
 }
 
 .paddingY {
-  padding: 3rem 0;
+	padding: 3rem 0;
 }
 
 .desery--cups {
-  display: flex;
-  flex-direction: column;
-  ul {
-    margin: 0;
-    line-height: 2;
-  }
-  li {
-    margin-bottom: 0.5rem;
-    list-style-position: inside;
-  }
+	display: flex;
+	flex-direction: column;
+	ul {
+		margin: 0;
+		line-height: 2;
+	}
+	li {
+		margin-bottom: 0.5rem;
+		list-style-position: inside;
+	}
 }
 
 .desery--cups--hidden {
-  display: none;
+	display: none;
 }
 
 .desery--cups--fade {
-  background: linear-gradient(#fdfbf700, #fdfbf7);
-  width: 104%;
-  height: 100%;
-  position: absolute;
-  right: -2px;
-  transition: height;
+	background: linear-gradient(#fdfbf700, #fdfbf7);
+	width: 104%;
+	height: 100%;
+	position: absolute;
+	right: -2px;
+	transition: height;
 }
 
 .relative {
-  position: relative;
+	position: relative;
 }
 
 #desery__button {
-  background-color: $highlight-color-light;
-  color: $highlight-color;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  max-width: 100px;
-  margin-top: 2rem;
-  margin-bottom: 0rem;
+	background-color: $highlight-color-light;
+	color: $highlight-color;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	max-width: 100px;
+	margin-top: 2rem;
+	margin-bottom: 0rem;
 }
 
 // swiper
 .swiper-wrapper {
-  overflow-y: visible;
+	overflow-y: visible;
 }
 
 .swiper-container {
-  width: 100%;
-  max-width: 500px;
-  max-height: 320px;
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: visible;
+	width: 100%;
+	max-width: 500px;
+	max-height: 320px;
+	margin: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-y: visible;
 }
 
 .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: visible;
-  img {
-    border: 0.5rem $bg-color-main solid;
-    overflow-y: visible;
-  }
-  picture {
-    overflow-y: visible;
-    margin: 0.8rem;
-  }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y: visible;
+	img {
+		border: 0.5rem $bg-color-main solid;
+		overflow-y: visible;
+	}
+	picture {
+		overflow-y: visible;
+		margin: 0.8rem;
+	}
 }
 
 .swiper--color {
-  color: $highlight-color !important;
+	color: $highlight-color !important;
 }
 
 .CTA--landingDiv {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
+	margin-top: 3rem;
+	display: flex;
+	justify-content: center;
 }
 
 .CTA--landing {
-  position: relative;
-  padding: 0.8rem 1.5rem;
-  background-color: $highlight-color;
-  font-size: 1rem;
-  color: $bg-color-main;
-  border-radius: 2rem;
-  box-shadow: $highlight-shadow;
-  top: 0;
-  transition: top 200ms;
+	position: relative;
+	padding: 0.8rem 1.5rem;
+	background-color: $highlight-color;
+	font-size: 1rem;
+	color: $bg-color-main;
+	border-radius: 2rem;
+	box-shadow: $highlight-shadow;
+	top: 0;
+	transition: top 200ms;
 }
 
 .CTA--landing:hover {
-  top: -2px;
+	top: -2px;
 }
